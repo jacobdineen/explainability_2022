@@ -1,5 +1,7 @@
 import shap
 import sklearn
+from utils import vectorize_categorical
+from sklearn.model_selection import train_test_split
 
 
 def fetch_datasets():
