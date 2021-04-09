@@ -1,792 +1,1841 @@
-metric,accuracy,,,,,,,
-,,,,,,,,
-dataset,model,feature,Sum of shap,Sum of anwa,,,,
-adult,nn,Capital Gain,1,22,,,,
-,,Capital Loss,2,5,,,,
-,,Age,3,2,,,,
-,,Marital Status_4,4,8,,,,
-,,Workclass_4,5,3,,,,
-,,Education-Num,6,18,,,,
-,,Relationship_3,7,10,,,,
-,,Hours per week,8,1,,,,
-,,Relationship_4,9,22,,,,
-,,Occupation_10,10,9,,,,
-,,Race_4,11,13,,,,
-,,Sex_0,12,4,,,,
-,,Relationship_0,13,15,,,,
-,,Occupation_12,14,22,,,,
-,,Race_2,15,20,,,,
-,,Occupation_4,16,12,,,,
-,,Occupation_7,17,16,,,,
-,,Occupation_5,18,22,,,,
-,,Workclass_1,19,11,,,,
-,,Occupation_8,20,17,,,,
-,,Marital Status_0,21,22,,,,
-,,Occupation_14,22,19,,,,
-,,Marital Status_2,23,22,,,,
-,,Workclass_2,24,6,,,,
-,,Occupation_13,25,22,,,,
-,,Occupation_6,26,14,,,,
-,,Occupation_1,27,22,,,,
-,,Race_1,28,22,,,,
-,,Occupation_3,29,22,,,,
-,,Occupation_11,30,7,,,,
-,,Relationship_1,31,22,,,,
-,,Workclass_6,32,22,,,,
-,,Marital Status_5,33,21,,,,
-,,Workclass_5,34,22,,,,
-,,Sex_1,35,22,,,,
-,,Relationship_5,36,22,,,,
-,,Relationship_2,37,22,,,,
-,,Race_0,38,22,,,,
-,,Workclass_0,39,22,,,,
-,,Occupation_0,40,22,,,,
-,,Marital Status_1,41,22,,,,
-,,Marital Status_3,41,22,,,,
-,,Marital Status_6,41,22,,,,
-,,Race_3,41,22,,,,
-,,Workclass_7,41,22,,,,
-,gbc,Capital Gain,4,11,,,,
-,,Capital Loss,8,14,,,,
-,,Age,3,5,,,,
-,,Marital Status_4,21,14,,,,
-,,Workclass_4,12,14,,,,
-,,Education-Num,1,2,,,,
-,,Relationship_3,31,14,,,,
-,,Hours per week,6,1,,,,
-,,Relationship_4,14,14,,,,
-,,Occupation_10,22,14,,,,
-,,Race_4,23,14,,,,
-,,Sex_0,31,14,,,,
-,,Relationship_0,27,14,,,,
-,,Occupation_12,17,10,,,,
-,,Race_2,24,14,,,,
-,,Occupation_4,7,3,,,,
-,,Occupation_7,28,14,,,,
-,,Occupation_5,31,14,,,,
-,,Workclass_1,5,7,,,,
-,,Occupation_8,18,9,,,,
-,,Marital Status_0,29,14,,,,
-,,Occupation_14,25,14,,,,
-,,Marital Status_2,2,8,,,,
-,,Workclass_2,11,12,,,,
-,,Occupation_13,13,10,,,,
-,,Occupation_6,31,14,,,,
-,,Occupation_1,10,6,,,,
-,,Race_1,9,4,,,,
-,,Occupation_3,31,14,,,,
-,,Occupation_11,20,14,,,,
-,,Relationship_1,31,14,,,,
-,,Workclass_6,16,14,,,,
-,,Marital Status_5,31,14,,,,
-,,Workclass_5,19,14,,,,
-,,Sex_1,31,14,,,,
-,,Relationship_5,15,13,,,,
-,,Relationship_2,31,14,,,,
-,,Race_0,26,14,,,,
-,,Workclass_0,30,14,,,,
-,,Occupation_0,31,14,,,,
-,,Marital Status_1,31,14,,,,
-,,Marital Status_3,31,14,,,,
-,,Marital Status_6,31,14,,,,
-,,Race_3,31,14,,,,
-,,Workclass_7,31,14,,,,
-,knn,Capital Gain,5,5,,,,
-,,Capital Loss,3,4,,,,
-,,Age,1,1,,,,
-,,Marital Status_4,12,7,,,,
-,,Workclass_4,11,7,,,,
-,,Education-Num,2,3,,,,
-,,Relationship_3,8,7,,,,
-,,Hours per week,4,2,,,,
-,,Relationship_4,7,7,,,,
-,,Occupation_10,13,7,,,,
-,,Race_4,18,7,,,,
-,,Sex_0,10,7,,,,
-,,Relationship_0,19,7,,,,
-,,Occupation_12,26,7,,,,
-,,Race_2,15,7,,,,
-,,Occupation_4,34,7,,,,
-,,Occupation_7,31,7,,,,
-,,Occupation_5,34,7,,,,
-,,Workclass_1,24,7,,,,
-,,Occupation_8,14,7,,,,
-,,Marital Status_0,16,7,,,,
-,,Occupation_14,34,7,,,,
-,,Marital Status_2,6,7,,,,
-,,Workclass_2,30,7,,,,
-,,Occupation_13,20,7,,,,
-,,Occupation_6,34,6,,,,
-,,Occupation_1,21,7,,,,
-,,Race_1,34,7,,,,
-,,Occupation_3,17,7,,,,
-,,Occupation_11,34,7,,,,
-,,Relationship_1,27,7,,,,
-,,Workclass_6,34,7,,,,
-,,Marital Status_5,34,7,,,,
-,,Workclass_5,34,7,,,,
-,,Sex_1,9,7,,,,
-,,Relationship_5,23,7,,,,
-,,Relationship_2,32,7,,,,
-,,Race_0,33,7,,,,
-,,Workclass_0,25,7,,,,
-,,Occupation_0,28,7,,,,
-,,Marital Status_1,34,7,,,,
-,,Marital Status_3,34,7,,,,
-,,Marital Status_6,22,7,,,,
-,,Race_3,34,7,,,,
-,,Workclass_7,29,7,,,,
-,logit,Capital Gain,11,8,,,,
-,,Capital Loss,7,15,,,,
-,,Age,2,2,,,,
-,,Marital Status_4,4,7,,,,
-,,Workclass_4,3,12,,,,
-,,Education-Num,1,1,,,,
-,,Relationship_3,8,5,,,,
-,,Hours per week,22,4,,,,
-,,Relationship_4,5,7,,,,
-,,Occupation_10,13,13,,,,
-,,Race_4,10,3,,,,
-,,Sex_0,12,16,,,,
-,,Relationship_0,16,16,,,,
-,,Occupation_12,15,16,,,,
-,,Race_2,17,16,,,,
-,,Occupation_4,14,16,,,,
-,,Occupation_7,21,16,,,,
-,,Occupation_5,29,16,,,,
-,,Workclass_1,18,14,,,,
-,,Occupation_8,19,16,,,,
-,,Marital Status_0,34,16,,,,
-,,Occupation_14,25,16,,,,
-,,Marital Status_2,6,6,,,,
-,,Workclass_2,23,16,,,,
-,,Occupation_13,27,9,,,,
-,,Occupation_6,24,16,,,,
-,,Occupation_1,31,16,,,,
-,,Race_1,20,16,,,,
-,,Occupation_3,36,16,,,,
-,,Occupation_11,32,16,,,,
-,,Relationship_1,28,16,,,,
-,,Workclass_6,35,16,,,,
-,,Marital Status_5,33,16,,,,
-,,Workclass_5,26,11,,,,
-,,Sex_1,9,10,,,,
-,,Relationship_5,30,16,,,,
-,,Relationship_2,36,16,,,,
-,,Race_0,36,16,,,,
-,,Workclass_0,36,16,,,,
-,,Occupation_0,36,16,,,,
-,,Marital Status_1,36,16,,,,
-,,Marital Status_3,36,16,,,,
-,,Marital Status_6,36,16,,,,
-,,Race_3,36,16,,,,
-,,Workclass_7,36,16,,,,
-,rf,Capital Gain,9,12,,,,
-,,Capital Loss,15,12,,,,
-,,Age,4,2,,,,
-,,Marital Status_4,12,5,,,,
-,,Workclass_4,7,12,,,,
-,,Education-Num,1,3,,,,
-,,Relationship_3,13,12,,,,
-,,Hours per week,5,1,,,,
-,,Relationship_4,2,7,,,,
-,,Occupation_10,10,12,,,,
-,,Race_4,17,9,,,,
-,,Sex_0,20,12,,,,
-,,Relationship_0,28,12,,,,
-,,Occupation_12,25,12,,,,
-,,Race_2,29,12,,,,
-,,Occupation_4,6,12,,,,
-,,Occupation_7,23,12,,,,
-,,Occupation_5,32,12,,,,
-,,Workclass_1,8,6,,,,
-,,Occupation_8,24,12,,,,
-,,Marital Status_0,33,12,,,,
-,,Occupation_14,35,12,,,,
-,,Marital Status_2,3,8,,,,
-,,Workclass_2,16,12,,,,
-,,Occupation_13,21,11,,,,
-,,Occupation_6,34,12,,,,
-,,Occupation_1,11,4,,,,
-,,Race_1,14,10,,,,
-,,Occupation_3,27,12,,,,
-,,Occupation_11,26,12,,,,
-,,Relationship_1,31,12,,,,
-,,Workclass_6,22,12,,,,
-,,Marital Status_5,36,12,,,,
-,,Workclass_5,30,12,,,,
-,,Sex_1,18,12,,,,
-,,Relationship_5,19,12,,,,
-,,Relationship_2,38,12,,,,
-,,Race_0,38,12,,,,
-,,Workclass_0,38,12,,,,
-,,Occupation_0,38,12,,,,
-,,Marital Status_1,38,12,,,,
-,,Marital Status_3,38,12,,,,
-,,Marital Status_6,37,12,,,,
-,,Race_3,38,12,,,,
-,,Workclass_7,38,12,,,,
-cancer,knn,area error,3,4,,,,
-,,compactness error,10,8,,,,
-,,concave points error,10,8,,,,
-,,concavity error,10,8,,,,
-,,fractal dimension error,10,8,,,,
-,,mean area,2,2,,,,
-,,mean compactness,10,8,,,,
-,,mean concave points,10,8,,,,
-,,mean concavity,10,8,,,,
-,,mean fractal dimension,10,8,,,,
-,,mean perimeter,6,6,,,,
-,,mean radius,10,8,,,,
-,,mean smoothness,10,8,,,,
-,,mean symmetry,10,8,,,,
-,,mean texture,7,5,,,,
-,,perimeter error,9,8,,,,
-,,radius error,8,8,,,,
-,,smoothness error,10,8,,,,
-,,symmetry error,10,8,,,,
-,,texture error,10,8,,,,
-,,worst area,1,1,,,,
-,,worst compactness,10,8,,,,
-,,worst concave points,10,8,,,,
-,,worst concavity,10,8,,,,
-,,worst fractal dimension,10,8,,,,
-,,worst perimeter,4,7,,,,
-,,worst radius,10,8,,,,
-,,worst smoothness,10,8,,,,
-,,worst symmetry,10,8,,,,
-,,worst texture,5,3,,,,
-,nn,area error,4,7,,,,
-,,compactness error,21,9,,,,
-,,concave points error,18,9,,,,
-,,concavity error,19,9,,,,
-,,fractal dimension error,24,9,,,,
-,,mean area,3,3,,,,
-,,mean compactness,16,9,,,,
-,,mean concave points,20,9,,,,
-,,mean concavity,11,9,,,,
-,,mean fractal dimension,27,9,,,,
-,,mean perimeter,7,6,,,,
-,,mean radius,6,4,,,,
-,,mean smoothness,15,9,,,,
-,,mean symmetry,29,9,,,,
-,,mean texture,25,9,,,,
-,,perimeter error,28,9,,,,
-,,radius error,13,9,,,,
-,,smoothness error,26,9,,,,
-,,symmetry error,30,9,,,,
-,,texture error,12,9,,,,
-,,worst area,1,1,,,,
-,,worst compactness,10,9,,,,
-,,worst concave points,14,9,,,,
-,,worst concavity,8,9,,,,
-,,worst fractal dimension,17,9,,,,
-,,worst perimeter,2,2,,,,
-,,worst radius,9,8,,,,
-,,worst smoothness,23,9,,,,
-,,worst symmetry,22,9,,,,
-,,worst texture,5,5,,,,
-,gbc,area error,4,5,,,,
-,,compactness error,22,10,,,,
-,,concave points error,29,20,,,,
-,,concavity error,30,20,,,,
-,,fractal dimension error,23,20,,,,
-,,mean area,13,18,,,,
-,,mean compactness,14,17,,,,
-,,mean concave points,3,7,,,,
-,,mean concavity,21,19,,,,
-,,mean fractal dimension,26,20,,,,
-,,mean perimeter,15,2,,,,
-,,mean radius,27,8,,,,
-,,mean smoothness,11,8,,,,
-,,mean symmetry,19,7,,,,
-,,mean texture,9,3,,,,
-,,perimeter error,10,12,,,,
-,,radius error,17,11,,,,
-,,smoothness error,18,16,,,,
-,,symmetry error,24,20,,,,
-,,texture error,20,10,,,,
-,,worst area,1,13,,,,
-,,worst compactness,16,10,,,,
-,,worst concave points,2,6,,,,
-,,worst concavity,5,14,,,,
-,,worst fractal dimension,28,20,,,,
-,,worst perimeter,8,4,,,,
-,,worst radius,7,9,,,,
-,,worst smoothness,12,15,,,,
-,,worst symmetry,25,20,,,,
-,,worst texture,6,1,,,,
-,logit,area error,5,6,,,,
-,,compactness error,24,14,,,,
-,,concave points error,14,14,,,,
-,,concavity error,27,14,,,,
-,,fractal dimension error,29,14,,,,
-,,mean area,12,12,,,,
-,,mean compactness,15,14,,,,
-,,mean concave points,21,14,,,,
-,,mean concavity,26,14,,,,
-,,mean fractal dimension,25,14,,,,
-,,mean perimeter,10,8,,,,
-,,mean radius,4,3,,,,
-,,mean smoothness,17,14,,,,
-,,mean symmetry,28,14,,,,
-,,mean texture,7,7,,,,
-,,perimeter error,8,9,,,,
-,,radius error,20,14,,,,
-,,smoothness error,16,14,,,,
-,,symmetry error,19,14,,,,
-,,texture error,9,10,,,,
-,,worst area,1,4,,,,
-,,worst compactness,13,11,,,,
-,,worst concave points,30,14,,,,
-,,worst concavity,11,13,,,,
-,,worst fractal dimension,22,14,,,,
-,,worst perimeter,2,2,,,,
-,,worst radius,3,1,,,,
-,,worst smoothness,23,14,,,,
-,,worst symmetry,18,14,,,,
-,,worst texture,6,5,,,,
-,rf,area error,8,15,,,,
-,,compactness error,25,19,,,,
-,,concave points error,30,19,,,,
-,,concavity error,29,19,,,,
-,,fractal dimension error,27,11,,,,
-,,mean area,11,7,,,,
-,,mean compactness,19,13,,,,
-,,mean concave points,5,16,,,,
-,,mean concavity,7,6,,,,
-,,mean fractal dimension,24,7,,,,
-,,mean perimeter,9,11,,,,
-,,mean radius,14,9,,,,
-,,mean smoothness,18,10,,,,
-,,mean symmetry,21,19,,,,
-,,mean texture,12,14,,,,
-,,perimeter error,16,12,,,,
-,,radius error,15,17,,,,
-,,smoothness error,28,19,,,,
-,,symmetry error,23,19,,,,
-,,texture error,26,18,,,,
-,,worst area,4,9,,,,
-,,worst compactness,13,19,,,,
-,,worst concave points,2,1,,,,
-,,worst concavity,6,5,,,,
-,,worst fractal dimension,22,11,,,,
-,,worst perimeter,1,3,,,,
-,,worst radius,3,4,,,,
-,,worst smoothness,17,19,,,,
-,,worst symmetry,20,8,,,,
-,,worst texture,10,2,,,,
-iris,nn,petal length (cm),1,1,,,,
-,,petal width (cm),2,4,,,,
-,,sepal length (cm),4,3,,,,
-,,sepal width (cm),3,2,,,,
-,rf,petal length (cm),2,1,,,,
-,,petal width (cm),1,2,,,,
-,,sepal length (cm),3,3,,,,
-,,sepal width (cm),4,4,,,,
-,knn,petal length (cm),1,1,,,,
-,,petal width (cm),2,2,,,,
-,,sepal length (cm),3,3,,,,
-,,sepal width (cm),4,4,,,,
-,logit,petal length (cm),1,1,,,,
-,,petal width (cm),2,2,,,,
-,,sepal length (cm),3,3,,,,
-,,sepal width (cm),4,4,,,,
-,gbc,petal length (cm),1,1,,,,
-,,petal width (cm),2,2,,,,
-,,sepal length (cm),4,4,,,,
-,,sepal width (cm),3,3,,,,
-wine,knn,alcalinity_of_ash,4,8,,,,
-,,alcohol,6,3,,,,
-,,ash,10,10,,,,
-,,color_intensity,3,4,,,,
-,,flavanoids,7,7,,,,
-,,hue,13,10,,,,
-,,magnesium,2,2,,,,
-,,malic_acid,5,6,,,,
-,,nonflavanoid_phenols,11,10,,,,
-,,od280/od315_of_diluted_wines,8,5,,,,
-,,proanthocyanins,12,9,,,,
-,,proline,1,1,,,,
-,,total_phenols,9,7,,,,
-,nn,alcalinity_of_ash,7,4,,,,
-,,alcohol,8,3,,,,
-,,ash,10,9,,,,
-,,color_intensity,2,5,,,,
-,,flavanoids,5,6,,,,
-,,hue,9,10,,,,
-,,magnesium,3,2,,,,
-,,malic_acid,4,7,,,,
-,,nonflavanoid_phenols,13,12,,,,
-,,od280/od315_of_diluted_wines,6,8,,,,
-,,proanthocyanins,12,11,,,,
-,,proline,1,1,,,,
-,,total_phenols,11,12,,,,
-,logit,alcalinity_of_ash,4,2,,,,
-,,alcohol,9,5,,,,
-,,ash,11,6,,,,
-,,color_intensity,2,4,,,,
-,,flavanoids,3,9,,,,
-,,hue,12,10,,,,
-,,magnesium,6,3,,,,
-,,malic_acid,5,7,,,,
-,,nonflavanoid_phenols,13,11,,,,
-,,od280/od315_of_diluted_wines,7,8,,,,
-,,proanthocyanins,10,6,,,,
-,,proline,1,1,,,,
-,,total_phenols,8,11,,,,
-,gbc,alcalinity_of_ash,7,6,,,,
-,,alcohol,8,8,,,,
-,,ash,10,8,,,,
-,,color_intensity,1,1,,,,
-,,flavanoids,2,2,,,,
-,,hue,11,8,,,,
-,,magnesium,6,5,,,,
-,,malic_acid,5,7,,,,
-,,nonflavanoid_phenols,13,8,,,,
-,,od280/od315_of_diluted_wines,4,4,,,,
-,,proanthocyanins,12,8,,,,
-,,proline,3,3,,,,
-,,total_phenols,9,8,,,,
-,rf,alcalinity_of_ash,11,7,,,,
-,,alcohol,4,1,,,,
-,,ash,13,7,,,,
-,,color_intensity,1,2,,,,
-,,flavanoids,2,4,,,,
-,,hue,7,7,,,,
-,,magnesium,8,5,,,,
-,,malic_acid,10,7,,,,
-,,nonflavanoid_phenols,12,7,,,,
-,,od280/od315_of_diluted_wines,5,6,,,,
-,,proanthocyanins,9,7,,,,
-,,proline,3,3,,,,
-,,total_phenols,6,7,,,,
-Grand Total,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,|X|,similarity,,,,,
-,,1000,0.701029,,0.701029,,,
-,,2000,0.564167,,0.564167,,,
-,,4000,0.492878,,0.492878,,,
-,,8000,0.742809,,0.742809,,,
-,,16000,0.857294,,0.857294,,,
-,,32000,0.870743,,0.870743,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,|X|,1000,2000,4000,8000,16000,32000
-,,similarity,0.701029,0.564167,0.492878,0.742809,0.857294,0.870743
+,feature,shap,anwa,dataset,model,metric
+0,sepal length (cm),0.04570144288153142,0.21620431527961237,iris,nn,accuracy
+1,sepal width (cm),0.05953794364046218,0.2320563628357552,iris,nn,accuracy
+2,petal length (cm),0.6956106551936542,0.3632760898282695,iris,nn,accuracy
+3,petal width (cm),0.19914995828435225,0.18846323205636295,iris,nn,accuracy
+0,sepal length (cm),0.04459232020066824,0.1558988764044944,iris,logit,accuracy
+1,sepal width (cm),0.025963192851088543,0.021067415730337317,iris,logit,accuracy
+2,petal length (cm),0.8106803235685843,0.6039325842696627,iris,logit,accuracy
+3,petal width (cm),0.11876416337965881,0.21910112359550565,iris,logit,accuracy
+0,sepal length (cm),0.046438234898733784,0.04624871531346355,iris,rf,accuracy
+1,sepal width (cm),0.020886426236260164,0.0,iris,rf,accuracy
+2,petal length (cm),0.44303900201073726,0.5097636176772871,iris,rf,accuracy
+3,petal width (cm),0.4896363368542688,0.4439876670092494,iris,rf,accuracy
+0,sepal length (cm),0.03291842475386775,0.14248704663212414,iris,knn,accuracy
+1,sepal width (cm),0.027011251758087197,0.0025906735751298226,iris,knn,accuracy
+2,petal length (cm),0.8227074542897327,0.6511226252158892,iris,knn,accuracy
+3,petal width (cm),0.11736286919831226,0.20379965457685686,iris,knn,accuracy
+0,sepal length (cm),0.032481661062274056,0.0,iris,gbc,accuracy
+1,sepal width (cm),0.047817987463621474,0.07024390243902383,iris,gbc,accuracy
+2,petal length (cm),0.4794434576206559,0.5365853658536585,iris,gbc,accuracy
+3,petal width (cm),0.4402568938534485,0.39317073170731776,iris,gbc,accuracy
+0,sepal length (cm),0.04570144288153142,0.21678764848274418,iris,nn,f1
+1,sepal width (cm),0.05953794364046218,0.22238867438174742,iris,nn,f1
+2,petal length (cm),0.6956106551936542,0.37368162321061127,iris,nn,f1
+3,petal width (cm),0.19914995828435225,0.18714205392489713,iris,nn,f1
+0,sepal length (cm),0.04459232020066824,0.1472064091143513,iris,logit,f1
+1,sepal width (cm),0.025963192851088543,0.019050011208762877,iris,logit,f1
+2,petal length (cm),0.8106803235685843,0.6271630326341453,iris,logit,f1
+3,petal width (cm),0.11876416337965881,0.2065805470427406,iris,logit,f1
+0,sepal length (cm),0.046438234898733784,0.04379717404273758,iris,rf,f1
+1,sepal width (cm),0.020886426236260164,0.0,iris,rf,f1
+2,petal length (cm),0.44303900201073726,0.5165148623281833,iris,rf,f1
+3,petal width (cm),0.4896363368542688,0.4396879636290791,iris,rf,f1
+0,sepal length (cm),0.03291842475386775,0.13586902126505276,iris,knn,f1
+1,sepal width (cm),0.027011251758087197,0.0012539923566043103,iris,knn,f1
+2,petal length (cm),0.8227074542897327,0.6748184956112809,iris,knn,f1
+3,petal width (cm),0.11736286919831226,0.18805849076706196,iris,knn,f1
+0,sepal length (cm),0.032481661062274056,0.0,iris,gbc,f1
+1,sepal width (cm),0.047817987463621474,0.0674296520644448,iris,gbc,f1
+2,petal length (cm),0.4794434576206559,0.5516115440787229,iris,gbc,f1
+3,petal width (cm),0.4402568938534485,0.3809588038568323,iris,gbc,f1
+0,sepal length (cm),0.04570144288153142,0.19594216834252814,iris,nn,precision
+1,sepal width (cm),0.05953794364046218,0.20293390394764338,iris,nn,precision
+2,petal length (cm),0.6956106551936542,0.43781788364033003,iris,nn,precision
+3,petal width (cm),0.19914995828435225,0.16330604406949845,iris,nn,precision
+0,sepal length (cm),0.04459232020066824,0.12316963292772055,iris,logit,precision
+1,sepal width (cm),0.025963192851088543,0.023550548890840232,iris,logit,precision
+2,petal length (cm),0.8106803235685843,0.6898565156777292,iris,logit,precision
+3,petal width (cm),0.11876416337965881,0.16342330250370998,iris,logit,precision
+0,sepal length (cm),0.046438234898733784,0.08138441088119709,iris,rf,precision
+1,sepal width (cm),0.020886426236260164,0.0,iris,rf,precision
+2,petal length (cm),0.44303900201073726,0.43773515887111203,iris,rf,precision
+3,petal width (cm),0.4896363368542688,0.4808804302476909,iris,rf,precision
+0,sepal length (cm),0.03291842475386775,0.07821245842529297,iris,knn,precision
+1,sepal width (cm),0.027011251758087197,0.00782499113596295,iris,knn,precision
+2,petal length (cm),0.8227074542897327,0.8012031178093164,iris,knn,precision
+3,petal width (cm),0.11736286919831226,0.11275943262942768,iris,knn,precision
+0,sepal length (cm),0.032481661062274056,0.0,iris,gbc,precision
+1,sepal width (cm),0.047817987463621474,0.09992456578248915,iris,gbc,precision
+2,petal length (cm),0.4794434576206559,0.5775600103679892,iris,gbc,precision
+3,petal width (cm),0.4402568938534485,0.32251542384952164,iris,gbc,precision
+0,sepal length (cm),0.04570144288153142,0.21620431527961237,iris,nn,recall
+1,sepal width (cm),0.05953794364046218,0.2320563628357552,iris,nn,recall
+2,petal length (cm),0.6956106551936542,0.3632760898282695,iris,nn,recall
+3,petal width (cm),0.19914995828435225,0.18846323205636295,iris,nn,recall
+0,sepal length (cm),0.04459232020066824,0.1558988764044944,iris,logit,recall
+1,sepal width (cm),0.025963192851088543,0.021067415730337317,iris,logit,recall
+2,petal length (cm),0.8106803235685843,0.6039325842696627,iris,logit,recall
+3,petal width (cm),0.11876416337965881,0.21910112359550565,iris,logit,recall
+0,sepal length (cm),0.046438234898733784,0.04624871531346355,iris,rf,recall
+1,sepal width (cm),0.020886426236260164,0.0,iris,rf,recall
+2,petal length (cm),0.44303900201073726,0.5097636176772871,iris,rf,recall
+3,petal width (cm),0.4896363368542688,0.4439876670092494,iris,rf,recall
+0,sepal length (cm),0.03291842475386775,0.14248704663212414,iris,knn,recall
+1,sepal width (cm),0.027011251758087197,0.0025906735751298226,iris,knn,recall
+2,petal length (cm),0.8227074542897327,0.6511226252158892,iris,knn,recall
+3,petal width (cm),0.11736286919831226,0.20379965457685686,iris,knn,recall
+0,sepal length (cm),0.032481661062274056,0.0,iris,gbc,recall
+1,sepal width (cm),0.047817987463621474,0.07024390243902383,iris,gbc,recall
+2,petal length (cm),0.4794434576206559,0.5365853658536585,iris,gbc,recall
+3,petal width (cm),0.4402568938534485,0.39317073170731776,iris,gbc,recall
+0,Age,0.06901742870800541,0.10067114093959792,adult,nn,accuracy
+1,Education-Num,0.04141693078981879,0.013422818791945457,adult,nn,accuracy
+2,Capital Gain,0.2066466492936552,0.0,adult,nn,accuracy
+3,Capital Loss,0.15850098263219214,0.07718120805369098,adult,nn,accuracy
+4,Hours per week,0.030420022429481587,0.15268456375838999,adult,nn,accuracy
+5,Workclass_0,7.08397736230382e-05,0.0,adult,nn,accuracy
+6,Workclass_1,0.013283024588008563,0.02516778523489948,adult,nn,accuracy
+7,Workclass_2,0.006651706141817469,0.07550335570469843,adult,nn,accuracy
+8,Workclass_4,0.053867466872389934,0.07382550335570477,adult,nn,accuracy
+9,Workclass_5,0.0019869038222931354,0.0,adult,nn,accuracy
+10,Workclass_6,0.002658486204497042,0.0,adult,nn,accuracy
+11,Workclass_7,0.0,0.0,adult,nn,accuracy
+12,Marital Status_0,0.009597769759419155,0.0,adult,nn,accuracy
+13,Marital Status_1,0.0,0.0,adult,nn,accuracy
+14,Marital Status_2,0.007991525433814843,0.0,adult,nn,accuracy
+15,Marital Status_3,0.0,0.0,adult,nn,accuracy
+16,Marital Status_4,0.06295232127328071,0.08892617449664389,adult,nn,accuracy
+17,Marital Status_5,0.002796698025001467,0.0,adult,nn,accuracy
+18,Marital Status_6,0.0,0.0,adult,nn,accuracy
+19,Occupation_0,0.00011375347558075184,0.0,adult,nn,accuracy
+20,Occupation_1,0.004869958570024467,0.0,adult,nn,accuracy
+21,Occupation_10,0.028031808688697393,0.0335570469798656,adult,nn,accuracy
+22,Occupation_11,0.004290042859228391,0.07550335570469843,adult,nn,accuracy
+23,Occupation_12,0.022885092135883047,0.02516778523489892,adult,nn,accuracy
+24,Occupation_13,0.005317248115154357,0.0,adult,nn,accuracy
+25,Occupation_14,0.009235558352834811,0.011744966442952346,adult,nn,accuracy
+26,Occupation_3,0.004768403716760263,0.0,adult,nn,accuracy
+27,Occupation_4,0.021273350363500844,0.0,adult,nn,accuracy
+28,Occupation_5,0.013478041880067035,0.0,adult,nn,accuracy
+29,Occupation_6,0.005286525134199466,0.0,adult,nn,accuracy
+30,Occupation_7,0.017590593711314814,0.036912751677851824,adult,nn,accuracy
+31,Occupation_8,0.0121601684256383,0.0,adult,nn,accuracy
+32,Relationship_0,0.025334536093361747,0.07885906040268466,adult,nn,accuracy
+33,Relationship_1,0.003199161865464206,0.0,adult,nn,accuracy
+34,Relationship_2,0.00015039225118638043,0.0,adult,nn,accuracy
+35,Relationship_3,0.03729460208275792,0.05536912751677885,adult,nn,accuracy
+36,Relationship_4,0.031489233249683134,0.0,adult,nn,accuracy
+37,Relationship_5,0.0008984017807940688,0.0,adult,nn,accuracy
+38,Race_0,5.3499327022718953e-05,0.0,adult,nn,accuracy
+39,Race_1,0.004624385073213795,0.005033557046980454,adult,nn,accuracy
+40,Race_2,0.022324483339568452,0.0033557046979862245,adult,nn,accuracy
+41,Race_3,0.0,0.0,adult,nn,accuracy
+42,Race_4,0.027558091712999624,0.011744966442952904,adult,nn,accuracy
+43,Sex_0,0.028048993524577275,0.05536912751677885,adult,nn,accuracy
+44,Sex_1,0.0018649185231880815,0.0,adult,nn,accuracy
+0,Age,0.1321886534474069,0.16285714285714453,adult,logit,accuracy
+1,Education-Num,0.14213116368427522,0.2942857142857143,adult,logit,accuracy
+2,Capital Gain,0.02992459254140626,0.042857142857143045,adult,logit,accuracy
+3,Capital Loss,0.06751869616540246,9.516197353929946e-16,adult,logit,accuracy
+4,Hours per week,0.0027036135576352384,0.08000000000000004,adult,logit,accuracy
+5,Workclass_0,0.0,0.0,adult,logit,accuracy
+6,Workclass_1,0.010465342845703409,0.008571428571427658,adult,logit,accuracy
+7,Workclass_2,0.0016053371603024663,0.0,adult,logit,accuracy
+8,Workclass_4,0.10577839783918545,0.022857142857141372,adult,logit,accuracy
+9,Workclass_5,0.0011100868328826033,0.0,adult,logit,accuracy
+10,Workclass_6,0.0002965624665939155,0.0,adult,logit,accuracy
+11,Workclass_7,0.0,0.0,adult,logit,accuracy
+12,Marital Status_0,0.0004167409893039178,0.0,adult,logit,accuracy
+13,Marital Status_1,0.0,0.0,adult,logit,accuracy
+14,Marital Status_2,0.06924074395197648,0.028571428571429334,adult,logit,accuracy
+15,Marital Status_3,0.0,0.0,adult,logit,accuracy
+16,Marital Status_4,0.08952491044196972,0.01999999999999977,adult,logit,accuracy
+17,Marital Status_5,0.00044695837123689486,0.0,adult,logit,accuracy
+18,Marital Status_6,0.0,0.0,adult,logit,accuracy
+19,Occupation_0,0.0,0.0,adult,logit,accuracy
+20,Occupation_1,0.0005582282096816921,0.0,adult,logit,accuracy
+21,Occupation_10,0.02485230362342748,0.07999999999999909,adult,logit,accuracy
+22,Occupation_11,0.0005068821373442033,0.0,adult,logit,accuracy
+23,Occupation_12,0.01578793944011978,0.0,adult,logit,accuracy
+24,Occupation_13,0.0010901703998882756,0.0,adult,logit,accuracy
+25,Occupation_14,0.0013094415273033487,0.0,adult,logit,accuracy
+26,Occupation_3,0.00015105198473217035,0.0,adult,logit,accuracy
+27,Occupation_4,0.022647392507513762,0.0,adult,logit,accuracy
+28,Occupation_5,0.0008466190275553043,0.0,adult,logit,accuracy
+29,Occupation_6,0.0014104756623890392,0.0,adult,logit,accuracy
+30,Occupation_7,0.004153224058401412,0.0,adult,logit,accuracy
+31,Occupation_8,0.008314101870090433,0.0,adult,logit,accuracy
+32,Relationship_0,0.014705826790216862,0.0,adult,logit,accuracy
+33,Relationship_1,0.0009492285799913791,0.0,adult,logit,accuracy
+34,Relationship_2,0.0,0.0,adult,logit,accuracy
+35,Relationship_3,0.04902811045092381,0.05428571428571326,adult,logit,accuracy
+36,Relationship_4,0.07130698184582283,0.054285714285716116,adult,logit,accuracy
+37,Relationship_5,0.00030920941328794045,0.0,adult,logit,accuracy
+38,Race_0,0.0,0.0,adult,logit,accuracy
+39,Race_1,0.004927614635409397,0.0,adult,logit,accuracy
+40,Race_2,0.011126654814172675,0.0,adult,logit,accuracy
+41,Race_3,0.0,0.0,adult,logit,accuracy
+42,Race_4,0.040837733544893985,0.08000000000000004,adult,logit,accuracy
+43,Sex_0,0.027395789461599318,0.0,adult,logit,accuracy
+44,Sex_1,0.044433219719953745,0.07142857142857048,adult,logit,accuracy
+0,Age,0.08217285380039123,0.10301507537688191,adult,rf,accuracy
+1,Education-Num,0.14880238358588033,0.08793969849245938,adult,rf,accuracy
+2,Capital Gain,0.037110961454579636,8.368515260993409e-16,adult,rf,accuracy
+3,Capital Loss,0.019948613823729096,8.368515260993409e-16,adult,rf,accuracy
+4,Hours per week,0.07589325897011487,0.39698492462310514,adult,rf,accuracy
+5,Workclass_0,0.0,8.368515260993409e-16,adult,rf,accuracy
+6,Workclass_1,0.03875320898202471,0.05025125628140428,adult,rf,accuracy
+7,Workclass_2,0.014824470712753387,0.017587939698492545,adult,rf,accuracy
+8,Workclass_4,0.03954329862435319,8.368515260993409e-16,adult,rf,accuracy
+9,Workclass_5,0.002758015260024422,8.368515260993409e-16,adult,rf,accuracy
+10,Workclass_6,0.008550660334855525,0.00502512562814001,adult,rf,accuracy
+11,Workclass_7,0.0,8.368515260993409e-16,adult,rf,accuracy
+12,Marital Status_0,0.00234574296261767,8.368515260993409e-16,adult,rf,accuracy
+13,Marital Status_1,0.0,8.368515260993409e-16,adult,rf,accuracy
+14,Marital Status_2,0.11229264628770091,0.08040201005024852,adult,rf,accuracy
+15,Marital Status_3,0.0,8.368515260993409e-16,adult,rf,accuracy
+16,Marital Status_4,0.032971614242552245,0.050251256281405955,adult,rf,accuracy
+17,Marital Status_5,0.0,8.368515260993409e-16,adult,rf,accuracy
+18,Marital Status_6,0.0,8.368515260993409e-16,adult,rf,accuracy
+19,Occupation_0,0.0,8.368515260993409e-16,adult,rf,accuracy
+20,Occupation_1,0.034061237140805105,0.0527638190954768,adult,rf,accuracy
+21,Occupation_10,0.03642489625101591,8.368515260993409e-16,adult,rf,accuracy
+22,Occupation_11,0.005612713992609047,8.368515260993409e-16,adult,rf,accuracy
+23,Occupation_12,0.005836824844380633,8.368515260993409e-16,adult,rf,accuracy
+24,Occupation_13,0.009804282325794661,8.368515260993409e-16,adult,rf,accuracy
+25,Occupation_14,0.0008749887806150829,8.368515260993409e-16,adult,rf,accuracy
+26,Occupation_3,0.005149734971418207,8.368515260993409e-16,adult,rf,accuracy
+27,Occupation_4,0.045356142656734995,0.010050251256281693,adult,rf,accuracy
+28,Occupation_5,0.002626734568566297,8.368515260993409e-16,adult,rf,accuracy
+29,Occupation_6,0.001340249500434604,8.368515260993409e-16,adult,rf,accuracy
+30,Occupation_7,0.00629090875342288,8.368515260993409e-16,adult,rf,accuracy
+31,Occupation_8,0.005912004887854547,8.368515260993409e-16,adult,rf,accuracy
+32,Relationship_0,0.00547531251405171,8.368515260993409e-16,adult,rf,accuracy
+33,Relationship_1,0.002659567349077847,0.007537688442210851,adult,rf,accuracy
+34,Relationship_2,0.0,8.368515260993409e-16,adult,rf,accuracy
+35,Relationship_3,0.027812256693154395,8.368515260993409e-16,adult,rf,accuracy
+36,Relationship_4,0.11680957206722621,0.07537688442211019,adult,rf,accuracy
+37,Relationship_5,0.01140145598157312,0.03015075376884424,adult,rf,accuracy
+38,Race_0,9.965419983533569e-05,8.368515260993409e-16,adult,rf,accuracy
+39,Race_1,0.020870748137985985,0.017587939698491706,adult,rf,accuracy
+40,Race_2,0.0047923629873142925,8.368515260993409e-16,adult,rf,accuracy
+41,Race_3,0.0,8.368515260993409e-16,adult,rf,accuracy
+42,Race_4,0.012434305565514982,0.015075376884421702,adult,rf,accuracy
+43,Sex_0,0.010580448846712002,8.368515260993409e-16,adult,rf,accuracy
+44,Sex_1,0.011805867942324971,8.368515260993409e-16,adult,rf,accuracy
+0,Age,0.338846602710955,0.41142857142857137,adult,knn,accuracy
+1,Education-Num,0.20318198060117376,0.11428571428571448,adult,knn,accuracy
+2,Capital Gain,0.09034500063575698,0.06000000000000027,adult,knn,accuracy
+3,Capital Loss,0.16884900967361907,0.08571428571428515,adult,knn,accuracy
+4,Hours per week,0.14026878147767757,0.32857142857142874,adult,knn,accuracy
+5,Workclass_0,0.0,0.0,adult,knn,accuracy
+6,Workclass_1,0.0005573102397724709,0.0,adult,knn,accuracy
+7,Workclass_2,0.00040184316836219976,0.0,adult,knn,accuracy
+8,Workclass_4,0.0053952005515574795,0.0,adult,knn,accuracy
+9,Workclass_5,0.0,0.0,adult,knn,accuracy
+10,Workclass_6,0.0,0.0,adult,knn,accuracy
+11,Workclass_7,0.0,0.0,adult,knn,accuracy
+12,Marital Status_0,0.0007978949148712635,0.0,adult,knn,accuracy
+13,Marital Status_1,0.0,0.0,adult,knn,accuracy
+14,Marital Status_2,0.007643983370947234,0.0,adult,knn,accuracy
+15,Marital Status_3,0.0,0.0,adult,knn,accuracy
+16,Marital Status_4,0.0028967456029575863,0.0,adult,knn,accuracy
+17,Marital Status_5,0.0,0.0,adult,knn,accuracy
+18,Marital Status_6,0.0,0.0,adult,knn,accuracy
+19,Occupation_0,0.0,0.0,adult,knn,accuracy
+20,Occupation_1,0.00038504545109795503,0.0,adult,knn,accuracy
+21,Occupation_10,0.004194183426607019,0.0,adult,knn,accuracy
+22,Occupation_11,0.0,0.0,adult,knn,accuracy
+23,Occupation_12,0.0,0.0,adult,knn,accuracy
+24,Occupation_13,0.0008474005995895545,0.0,adult,knn,accuracy
+25,Occupation_14,0.0,0.0,adult,knn,accuracy
+26,Occupation_3,0.0011651979091442807,0.0,adult,knn,accuracy
+27,Occupation_4,0.0,0.0,adult,knn,accuracy
+28,Occupation_5,0.0,0.0,adult,knn,accuracy
+29,Occupation_6,0.0,0.0,adult,knn,accuracy
+30,Occupation_7,0.00041934973116698027,0.0,adult,knn,accuracy
+31,Occupation_8,0.0008373784843794373,0.0,adult,knn,accuracy
+32,Relationship_0,0.001748088918816011,0.0,adult,knn,accuracy
+33,Relationship_1,0.0005524985392287697,0.0,adult,knn,accuracy
+34,Relationship_2,0.0,0.0,adult,knn,accuracy
+35,Relationship_3,0.005861759659725404,0.0,adult,knn,accuracy
+36,Relationship_4,0.010130470806377108,0.0,adult,knn,accuracy
+37,Relationship_5,0.00020689966825674256,0.0,adult,knn,accuracy
+38,Race_0,0.00031167906742533564,0.0,adult,knn,accuracy
+39,Race_1,0.0,0.0,adult,knn,accuracy
+40,Race_2,0.0013133597191122299,0.0,adult,knn,accuracy
+41,Race_3,0.0,0.0,adult,knn,accuracy
+42,Race_4,0.001258072749082953,0.0,adult,knn,accuracy
+43,Sex_0,0.0060562367905202035,0.0,adult,knn,accuracy
+44,Sex_1,0.005528025531819373,0.0,adult,knn,accuracy
+0,Age,0.11299651404011372,0.08064516129032315,adult,gbc,accuracy
+1,Education-Num,0.19332943425645188,0.1903225806451624,adult,gbc,accuracy
+2,Capital Gain,0.08854328386135557,0.01935483870967631,adult,gbc,accuracy
+3,Capital Loss,0.055834584933241456,0.0,adult,gbc,accuracy
+4,Hours per week,0.07369075485080906,0.3032258064516142,adult,gbc,accuracy
+5,Workclass_0,4.393829102138659e-05,0.0,adult,gbc,accuracy
+6,Workclass_1,0.08277519927720572,0.04193548387096838,adult,gbc,accuracy
+7,Workclass_2,0.0227626588823183,0.0,adult,gbc,accuracy
+8,Workclass_4,0.01886782123094364,0.0,adult,gbc,accuracy
+9,Workclass_5,0.001396502025187088,0.0,adult,gbc,accuracy
+10,Workclass_6,0.0036442738069748827,0.0,adult,gbc,accuracy
+11,Workclass_7,0.0,0.0,adult,gbc,accuracy
+12,Marital Status_0,0.0,0.0,adult,gbc,accuracy
+13,Marital Status_1,0.0,0.0,adult,gbc,accuracy
+14,Marital Status_2,0.1582506218478236,0.016129032258064845,adult,gbc,accuracy
+15,Marital Status_3,0.0,0.0,adult,gbc,accuracy
+16,Marital Status_4,0.001976660488313345,0.0,adult,gbc,accuracy
+17,Marital Status_5,0.0,0.0,adult,gbc,accuracy
+18,Marital Status_6,0.0,0.0,adult,gbc,accuracy
+19,Occupation_0,0.00016904283052809083,0.0,adult,gbc,accuracy
+20,Occupation_1,0.03737162048239417,0.0,adult,gbc,accuracy
+21,Occupation_10,0.0003629015441073715,0.0,adult,gbc,accuracy
+22,Occupation_11,0.0012839401551092205,0.0,adult,gbc,accuracy
+23,Occupation_12,0.002880090683261804,0.0,adult,gbc,accuracy
+24,Occupation_13,0.015681105641349283,0.032258064516128615,adult,gbc,accuracy
+25,Occupation_14,0.0,0.0,adult,gbc,accuracy
+26,Occupation_3,8.172280281823541e-05,0.0,adult,gbc,accuracy
+27,Occupation_4,0.05825001578709493,0.09999999999999946,adult,gbc,accuracy
+28,Occupation_5,0.0,0.0,adult,gbc,accuracy
+29,Occupation_6,0.0,0.0,adult,gbc,accuracy
+30,Occupation_7,0.0,0.0,adult,gbc,accuracy
+31,Occupation_8,0.002132247453532755,0.019354838709677386,adult,gbc,accuracy
+32,Relationship_0,0.0,0.0,adult,gbc,accuracy
+33,Relationship_1,0.0,0.0,adult,gbc,accuracy
+34,Relationship_2,0.0,0.0,adult,gbc,accuracy
+35,Relationship_3,9.1750513359185e-05,0.0,adult,gbc,accuracy
+36,Relationship_4,0.013739633730011764,0.0,adult,gbc,accuracy
+37,Relationship_5,0.009791815560281025,0.0,adult,gbc,accuracy
+38,Race_0,0.0,0.0,adult,gbc,accuracy
+39,Race_1,0.04340515286040811,0.19677419354838532,adult,gbc,accuracy
+40,Race_2,3.7475591998183564e-05,0.0,adult,gbc,accuracy
+41,Race_3,0.0,0.0,adult,gbc,accuracy
+42,Race_4,0.0005445079199998562,0.0,adult,gbc,accuracy
+43,Sex_0,0.0,0.0,adult,gbc,accuracy
+44,Sex_1,6.472865198649578e-05,0.0,adult,gbc,accuracy
+0,Age,0.06873442263333517,0.04259964388338248,adult,nn,f1
+1,Education-Num,0.041338316636234176,0.030032841061849638,adult,nn,f1
+2,Capital Gain,0.20527720087278475,0.019120952701713226,adult,nn,f1
+3,Capital Loss,0.1576528705922112,0.009088234936449804,adult,nn,f1
+4,Hours per week,0.03173921295033662,0.05546688669478665,adult,nn,f1
+5,Workclass_0,0.0,0.019120952701713226,adult,nn,f1
+6,Workclass_1,0.013230170411017664,0.019120952701713226,adult,nn,f1
+7,Workclass_2,0.006639184733406391,0.034783992853148975,adult,nn,f1
+8,Workclass_4,0.05377585879664226,0.03234751994070342,adult,nn,f1
+9,Workclass_5,0.0019779245792114607,0.019120952701713226,adult,nn,f1
+10,Workclass_6,0.002860864900040858,0.019120952701713226,adult,nn,f1
+11,Workclass_7,0.0,0.019120952701713226,adult,nn,f1
+12,Marital Status_0,0.009708616944925915,0.019120952701713226,adult,nn,f1
+13,Marital Status_1,0.0,0.019120952701713226,adult,nn,f1
+14,Marital Status_2,0.008030042253728085,0.019120952701713226,adult,nn,f1
+15,Marital Status_3,0.0,0.019120952701713226,adult,nn,f1
+16,Marital Status_4,0.06134203232862206,0.031651384822861825,adult,nn,f1
+17,Marital Status_5,0.0027720011750432486,0.021905493173079618,adult,nn,f1
+18,Marital Status_6,0.0,0.019120952701713226,adult,nn,f1
+19,Occupation_0,4.645399857383744e-05,0.019120952701713226,adult,nn,f1
+20,Occupation_1,0.005053528779566835,0.019120952701713226,adult,nn,f1
+21,Occupation_10,0.02811262855086605,0.02086129049631718,adult,nn,f1
+22,Occupation_11,0.004250651728329206,0.030372821402536034,adult,nn,f1
+23,Occupation_12,0.023975665467978767,0.021905493173079618,adult,nn,f1
+24,Occupation_13,0.005298711975784806,0.014079613901012828,adult,nn,f1
+25,Occupation_14,0.009370604228261416,0.019120952701713226,adult,nn,f1
+26,Occupation_3,0.004835052311614856,0.019120952701713226,adult,nn,f1
+27,Occupation_4,0.021418659969867443,0.015970115951275444,adult,nn,f1
+28,Occupation_5,0.013413694760074821,0.019120952701713226,adult,nn,f1
+29,Occupation_6,0.005165402795075554,0.021557425614158778,adult,nn,f1
+30,Occupation_7,0.017385697650704898,0.020513222937396422,adult,nn,f1
+31,Occupation_8,0.012839047961166809,0.021209358055238103,adult,nn,f1
+32,Relationship_0,0.02553226608271202,0.02225356073200046,adult,nn,f1
+33,Relationship_1,0.0030280280252573508,0.019120952701713226,adult,nn,f1
+34,Relationship_2,0.0004469565370557004,0.019120952701713226,adult,nn,f1
+35,Relationship_3,0.03810674941701404,0.02712650655689148,adult,nn,f1
+36,Relationship_4,0.031394587452044175,0.019120952701713226,adult,nn,f1
+37,Relationship_5,0.0011832328553415725,0.019120952701713226,adult,nn,f1
+38,Race_0,0.00018610991821519849,0.019120952701713226,adult,nn,f1
+39,Race_1,0.004528281703619611,0.016600283301363067,adult,nn,f1
+40,Race_2,0.021915747700997197,0.02107394896330563,adult,nn,f1
+41,Race_3,0.0,0.019120952701713226,adult,nn,f1
+42,Race_4,0.028636686394744648,0.0162851996263193,adult,nn,f1
+43,Sex_0,0.026502050861450955,0.03253324978343984,adult,nn,f1
+44,Sex_1,0.002294783066142437,0.019120952701713226,adult,nn,f1
+0,Age,0.13165152234809738,0.02688139191131884,adult,logit,f1
+1,Education-Num,0.14208660695569342,0.03389043362108913,adult,logit,f1
+2,Capital Gain,0.029874030013039576,0.019514965322137003,adult,logit,f1
+3,Capital Loss,0.06754681600100781,0.021947072706677315,adult,logit,f1
+4,Hours per week,0.0029957931131744738,0.024471875727311954,adult,logit,f1
+5,Workclass_0,0.0,0.021971756196471088,adult,logit,f1
+6,Workclass_1,0.010469862849571574,0.021971756196471088,adult,logit,f1
+7,Workclass_2,0.0016065803928587976,0.021971756196471088,adult,logit,f1
+8,Workclass_4,0.10558940431581569,0.022306749683042068,adult,logit,f1
+9,Workclass_5,0.0010936752449598646,0.021971756196471088,adult,logit,f1
+10,Workclass_6,0.00029667684450712445,0.021971756196471088,adult,logit,f1
+11,Workclass_7,0.0,0.021971756196471088,adult,logit,f1
+12,Marital Status_0,0.0003400583494239182,0.021971756196471088,adult,logit,f1
+13,Marital Status_1,0.0,0.021971756196471088,adult,logit,f1
+14,Marital Status_2,0.06945352283192734,0.01705817444780292,adult,logit,f1
+15,Marital Status_3,0.0,0.021971756196471088,adult,logit,f1
+16,Marital Status_4,0.08960075357024198,0.02173239457398207,adult,logit,f1
+17,Marital Status_5,0.00042751980594135067,0.021971756196471088,adult,logit,f1
+18,Marital Status_6,0.0,0.021971756196471088,adult,logit,f1
+19,Occupation_0,0.0,0.021971756196471088,adult,logit,f1
+20,Occupation_1,0.0006351268373742222,0.021971756196471088,adult,logit,f1
+21,Occupation_10,0.02493243082961844,0.02209010746206869,adult,logit,f1
+22,Occupation_11,0.0005245376283826195,0.021971756196471088,adult,logit,f1
+23,Occupation_12,0.016024556627173857,0.021971756196471088,adult,logit,f1
+24,Occupation_13,0.0011288084563289853,0.021971756196471088,adult,logit,f1
+25,Occupation_14,0.0012908852844085673,0.021971756196471088,adult,logit,f1
+26,Occupation_3,0.0,0.021971756196471088,adult,logit,f1
+27,Occupation_4,0.022618675714342514,0.021971756196471088,adult,logit,f1
+28,Occupation_5,0.000858128736715224,0.021971756196471088,adult,logit,f1
+29,Occupation_6,0.0014028810238645997,0.021971756196471088,adult,logit,f1
+30,Occupation_7,0.004170060107861925,0.021971756196471088,adult,logit,f1
+31,Occupation_8,0.00864325439970309,0.021971756196471088,adult,logit,f1
+32,Relationship_0,0.014586930736417387,0.021971756196471088,adult,logit,f1
+33,Relationship_1,0.0010126955166351952,0.021971756196471088,adult,logit,f1
+34,Relationship_2,0.0,0.021971756196471088,adult,logit,f1
+35,Relationship_3,0.049485753779125556,0.027147651034612103,adult,logit,f1
+36,Relationship_4,0.07129575007603106,0.017549532622669735,adult,logit,f1
+37,Relationship_5,0.000673957956328067,0.021971756196471088,adult,logit,f1
+38,Race_0,0.0,0.021971756196471088,adult,logit,f1
+39,Race_1,0.004882842903260514,0.021971756196471088,adult,logit,f1
+40,Race_2,0.010985516587758032,0.021971756196471088,adult,logit,f1
+41,Race_3,0.0,0.021971756196471088,adult,logit,f1
+42,Race_4,0.040558574706876425,0.018734476705343926,adult,logit,f1
+43,Sex_0,0.027181488085156524,0.021971756196471088,adult,logit,f1
+44,Sex_1,0.044074321370377,0.023578975894868813,adult,logit,f1
+0,Age,0.08093352250044544,0.018173162974031817,adult,rf,f1
+1,Education-Num,0.14910989476745504,0.021068443909860114,adult,rf,f1
+2,Capital Gain,0.03717607222917716,0.023182337356878514,adult,rf,f1
+3,Capital Loss,0.019936008175547013,0.023182337356878514,adult,rf,f1
+4,Hours per week,0.07556932363674655,0.002392502704824214,adult,rf,f1
+5,Workclass_0,0.0,0.023182337356878514,adult,rf,f1
+6,Workclass_1,0.03911682267580856,0.026226077673228855,adult,rf,f1
+7,Workclass_2,0.014799232010532378,0.02365818533420392,adult,rf,f1
+8,Workclass_4,0.039295654801325075,0.023182337356878514,adult,rf,f1
+9,Workclass_5,0.002889356684762874,0.023182337356878514,adult,rf,f1
+10,Workclass_6,0.008834119837173972,0.023182337356878514,adult,rf,f1
+11,Workclass_7,8.167948084737712e-05,0.023182337356878514,adult,rf,f1
+12,Marital Status_0,0.002432931278655556,0.023182337356878514,adult,rf,f1
+13,Marital Status_1,0.0,0.023182337356878514,adult,rf,f1
+14,Marital Status_2,0.11171351687976028,0.023937959542410917,adult,rf,f1
+15,Marital Status_3,0.0,0.023182337356878514,adult,rf,f1
+16,Marital Status_4,0.03349002157560203,0.019883612763296542,adult,rf,f1
+17,Marital Status_5,0.00019959482085659687,0.023182337356878514,adult,rf,f1
+18,Marital Status_6,0.00011379185511322359,0.023182337356878514,adult,rf,f1
+19,Occupation_0,0.0,0.023182337356878514,adult,rf,f1
+20,Occupation_1,0.034053486109113164,0.020127962733191555,adult,rf,f1
+21,Occupation_10,0.0366246482813488,0.023182337356878514,adult,rf,f1
+22,Occupation_11,0.005539812994196195,0.023182337356878514,adult,rf,f1
+23,Occupation_12,0.006600645239428168,0.023182337356878514,adult,rf,f1
+24,Occupation_13,0.009803282320082183,0.023182337356878514,adult,rf,f1
+25,Occupation_14,0.000894349179435118,0.023182337356878514,adult,rf,f1
+26,Occupation_3,0.0051739257403432895,0.023182337356878514,adult,rf,f1
+27,Occupation_4,0.04451091303708177,0.023182337356878514,adult,rf,f1
+28,Occupation_5,0.002698067421830125,0.023182337356878514,adult,rf,f1
+29,Occupation_6,0.001364115272355099,0.023182337356878514,adult,rf,f1
+30,Occupation_7,0.006093834344386387,0.023182337356878514,adult,rf,f1
+31,Occupation_8,0.006113933014047765,0.02244928744719363,adult,rf,f1
+32,Relationship_0,0.005371261797804923,0.023182337356878514,adult,rf,f1
+33,Relationship_1,0.0025356372065501605,0.023182337356878514,adult,rf,f1
+34,Relationship_2,0.0,0.023182337356878514,adult,rf,f1
+35,Relationship_3,0.027694244810746324,0.023182337356878514,adult,rf,f1
+36,Relationship_4,0.11725715455661458,0.01841751294392683,adult,rf,f1
+37,Relationship_5,0.011872547446260125,0.021258355871634955,adult,rf,f1
+38,Race_0,3.756915486120283e-05,0.023182337356878514,adult,rf,f1
+39,Race_1,0.0208972107177964,0.023375523501519172,adult,rf,f1
+40,Race_2,0.004854697976495812,0.023182337356878514,adult,rf,f1
+41,Race_3,0.0,0.023182337356878514,adult,rf,f1
+42,Race_4,0.012594930280288009,0.01719661718056519,adult,rf,f1
+43,Sex_0,0.010153143856855012,0.023182337356878514,adult,rf,f1
+44,Sex_1,0.011569046032270406,0.023182337356878514,adult,rf,f1
+0,Age,0.340875149199286,0.03392064801975485,adult,knn,f1
+1,Education-Num,0.2050300716489876,0.0004682063820916927,adult,knn,f1
+2,Capital Gain,0.09045420876850638,0.015411368278252815,adult,knn,f1
+3,Capital Loss,0.16793311481196205,0.02885239593931504,adult,knn,f1
+4,Hours per week,0.13910100596182576,0.03504229492877854,adult,knn,f1
+5,Workclass_0,0.0,0.022157627161295188,adult,knn,f1
+6,Workclass_1,0.0010746801829197702,0.022157627161295188,adult,knn,f1
+7,Workclass_2,0.00040436578306088654,0.022157627161295188,adult,knn,f1
+8,Workclass_4,0.0050922659723418,0.022157627161295188,adult,knn,f1
+9,Workclass_5,0.0,0.022157627161295188,adult,knn,f1
+10,Workclass_6,0.00015473383548929426,0.022157627161295188,adult,knn,f1
+11,Workclass_7,0.0,0.022157627161295188,adult,knn,f1
+12,Marital Status_0,0.0013006459488064026,0.022157627161295188,adult,knn,f1
+13,Marital Status_1,0.0,0.022157627161295188,adult,knn,f1
+14,Marital Status_2,0.007744257465934951,0.022157627161295188,adult,knn,f1
+15,Marital Status_3,0.0,0.022157627161295188,adult,knn,f1
+16,Marital Status_4,0.004223869733744746,0.022157627161295188,adult,knn,f1
+17,Marital Status_5,0.0,0.022157627161295188,adult,knn,f1
+18,Marital Status_6,0.0001083804904483879,0.022157627161295188,adult,knn,f1
+19,Occupation_0,0.00010550556552522708,0.022157627161295188,adult,knn,f1
+20,Occupation_1,0.0005088433629087313,0.022157627161295188,adult,knn,f1
+21,Occupation_10,0.004150792277845163,0.022157627161295188,adult,knn,f1
+22,Occupation_11,0.0,0.022157627161295188,adult,knn,f1
+23,Occupation_12,0.00021242727433036464,0.022157627161295188,adult,knn,f1
+24,Occupation_13,0.0003924200609925954,0.022157627161295188,adult,knn,f1
+25,Occupation_14,0.0,0.022157627161295188,adult,knn,f1
+26,Occupation_3,0.0010551015021743075,0.022157627161295188,adult,knn,f1
+27,Occupation_4,0.0003636593992017348,0.022157627161295188,adult,knn,f1
+28,Occupation_5,0.0,0.022157627161295188,adult,knn,f1
+29,Occupation_6,0.0,0.022157627161295188,adult,knn,f1
+30,Occupation_7,9.203296786907742e-05,0.022157627161295188,adult,knn,f1
+31,Occupation_8,0.0007811475289153193,0.022157627161295188,adult,knn,f1
+32,Relationship_0,0.0011446213056039043,0.022157627161295188,adult,knn,f1
+33,Relationship_1,0.00015224549459694385,0.022157627161295188,adult,knn,f1
+34,Relationship_2,0.0,0.022157627161295188,adult,knn,f1
+35,Relationship_3,0.0055129887964527405,0.022157627161295188,adult,knn,f1
+36,Relationship_4,0.007617740848336989,0.022157627161295188,adult,knn,f1
+37,Relationship_5,0.0,0.022157627161295188,adult,knn,f1
+38,Race_0,0.0,0.022157627161295188,adult,knn,f1
+39,Race_1,0.0,0.022157627161295188,adult,knn,f1
+40,Race_2,0.001380725228009464,0.022157627161295188,adult,knn,f1
+41,Race_3,0.0,0.022157627161295188,adult,knn,f1
+42,Race_4,0.0013295279562452016,0.022157627161295188,adult,knn,f1
+43,Sex_0,0.0058209386902706595,0.022157627161295188,adult,knn,f1
+44,Sex_1,0.005882531937407347,0.022157627161295188,adult,knn,f1
+0,Age,0.11327910525128461,0.02861965321478024,adult,gbc,f1
+1,Education-Num,0.19389670564167866,0.12359217342646929,adult,gbc,f1
+2,Capital Gain,0.08611880745531511,0.02598139361930837,adult,gbc,f1
+3,Capital Loss,0.05527198014866991,0.0,adult,gbc,f1
+4,Hours per week,0.07369662190717027,0.2575517680563322,adult,gbc,f1
+5,Workclass_0,0.0,0.0,adult,gbc,f1
+6,Workclass_1,0.08233398577242897,0.07640504652581397,adult,gbc,f1
+7,Workclass_2,0.022703137719724372,0.044634895631232525,adult,gbc,f1
+8,Workclass_4,0.019423201845697114,0.0,adult,gbc,f1
+9,Workclass_5,0.001548012837263712,0.0,adult,gbc,f1
+10,Workclass_6,0.004379601935418848,0.0,adult,gbc,f1
+11,Workclass_7,0.0,0.0,adult,gbc,f1
+12,Marital Status_0,0.0,0.0,adult,gbc,f1
+13,Marital Status_1,0.0,0.0,adult,gbc,f1
+14,Marital Status_2,0.15697007658412188,0.09433943493294715,adult,gbc,f1
+15,Marital Status_3,0.0,0.0,adult,gbc,f1
+16,Marital Status_4,0.0015106610944021083,0.0,adult,gbc,f1
+17,Marital Status_5,0.0,0.0,adult,gbc,f1
+18,Marital Status_6,0.00014083751082474206,0.0,adult,gbc,f1
+19,Occupation_0,0.00010951073778346505,0.0,adult,gbc,f1
+20,Occupation_1,0.03725750072068291,0.07199571635408364,adult,gbc,f1
+21,Occupation_10,0.0011958208979609734,0.0,adult,gbc,f1
+22,Occupation_11,0.0011622962640617622,0.0,adult,gbc,f1
+23,Occupation_12,0.0034591768853176885,0.013942894481566303,adult,gbc,f1
+24,Occupation_13,0.015597728547859818,0.02000874631744954,adult,gbc,f1
+25,Occupation_14,0.0,0.0,adult,gbc,f1
+26,Occupation_3,4.5315865199684326e-05,0.0,adult,gbc,f1
+27,Occupation_4,0.05863864321612,0.08932115967041869,adult,gbc,f1
+28,Occupation_5,0.0,0.0,adult,gbc,f1
+29,Occupation_6,0.0,0.0,adult,gbc,f1
+30,Occupation_7,6.10389898191358e-05,0.0,adult,gbc,f1
+31,Occupation_8,0.0022707495212339257,0.016731473377879332,adult,gbc,f1
+32,Relationship_0,0.0,0.0,adult,gbc,f1
+33,Relationship_1,6.796592345744256e-05,0.0,adult,gbc,f1
+34,Relationship_2,0.0,0.0,adult,gbc,f1
+35,Relationship_3,0.0,0.0,adult,gbc,f1
+36,Relationship_4,0.014982639852988514,0.0,adult,gbc,f1
+37,Relationship_5,0.009405294067410742,0.028012244844428432,adult,gbc,f1
+38,Race_0,0.0,0.0,adult,gbc,f1
+39,Race_1,0.04328260709315554,0.10886339954729034,adult,gbc,f1
+40,Race_2,0.000532461686024352,0.0,adult,gbc,f1
+41,Race_3,0.0,0.0,adult,gbc,f1
+42,Race_4,0.0005482965581788473,0.0,adult,gbc,f1
+43,Sex_0,0.0,0.0,adult,gbc,f1
+44,Sex_1,0.00011021746874496916,0.0,adult,gbc,f1
+0,Age,0.06972614668044193,0.03465097831489503,adult,nn,precision
+1,Education-Num,0.041133717243078564,0.01989901926160291,adult,nn,precision
+2,Capital Gain,0.20666980066182356,0.020006339775927515,adult,nn,precision
+3,Capital Loss,0.1590100586678099,0.011486275262800383,adult,nn,precision
+4,Hours per week,0.03164685097086812,0.04094722147362319,adult,nn,precision
+5,Workclass_0,8.959399098673551e-05,0.020006339775927515,adult,nn,precision
+6,Workclass_1,0.013337142498079728,0.018777239440160774,adult,nn,precision
+7,Workclass_2,0.006654764069328267,0.028972737628138606,adult,nn,precision
+8,Workclass_4,0.054094031329946786,0.02976975077055737,adult,nn,precision
+9,Workclass_5,0.0019712701141412292,0.020006339775927515,adult,nn,precision
+10,Workclass_6,0.0025896015630929897,0.020006339775927515,adult,nn,precision
+11,Workclass_7,0.0,0.020006339775927515,adult,nn,precision
+12,Marital Status_0,0.009650743341025034,0.020006339775927515,adult,nn,precision
+13,Marital Status_1,0.0,0.020006339775927515,adult,nn,precision
+14,Marital Status_2,0.007848795446192136,0.020006339775927515,adult,nn,precision
+15,Marital Status_3,0.0,0.020006339775927515,adult,nn,precision
+16,Marital Status_4,0.06293034527067387,0.030338101767638733,adult,nn,precision
+17,Marital Status_5,0.0028265020632081118,0.020006339775927515,adult,nn,precision
+18,Marital Status_6,0.0,0.020006339775927515,adult,nn,precision
+19,Occupation_0,5.3806849763164104e-05,0.020006339775927515,adult,nn,precision
+20,Occupation_1,0.00485854598104704,0.020006339775927515,adult,nn,precision
+21,Occupation_10,0.02811855555406697,0.021695036154174244,adult,nn,precision
+22,Occupation_11,0.004292218278741196,0.028972737628138606,adult,nn,precision
+23,Occupation_12,0.022499819243104225,0.020258592736114633,adult,nn,precision
+24,Occupation_13,0.005360500764058784,0.018777239440160774,adult,nn,precision
+25,Occupation_14,0.009849118712563653,0.020006339775927515,adult,nn,precision
+26,Occupation_3,0.004541050052577925,0.020006339775927515,adult,nn,precision
+27,Occupation_4,0.020478695199545427,0.020006339775927515,adult,nn,precision
+28,Occupation_5,0.01345150796872399,0.02438991205923068,adult,nn,precision
+29,Occupation_6,0.005289833415497297,0.020006339775927515,adult,nn,precision
+30,Occupation_7,0.017528109188696402,0.023393645631207247,adult,nn,precision
+31,Occupation_8,0.012162219214993872,0.021799619346369713,adult,nn,precision
+32,Relationship_0,0.024127504096858793,0.02817572448571984,adult,nn,precision
+33,Relationship_1,0.002836128607809017,0.020803352918346327,adult,nn,precision
+34,Relationship_2,0.00026483629382517004,0.020006339775927515,adult,nn,precision
+35,Relationship_3,0.03690847507101704,0.028687240383093077,adult,nn,precision
+36,Relationship_4,0.03192057534962821,0.020006339775927515,adult,nn,precision
+37,Relationship_5,0.0010528280153007216,0.020006339775927515,adult,nn,precision
+38,Race_0,6.474261902803777e-05,0.020006339775927515,adult,nn,precision
+39,Race_1,0.00474857895056437,0.020006339775927515,adult,nn,precision
+40,Race_2,0.022241322139119616,0.021779793148797123,adult,nn,precision
+41,Race_3,0.0,0.020006339775927515,adult,nn,precision
+42,Race_4,0.02783782992000684,0.017899310628898858,adult,nn,precision
+43,Sex_0,0.02797411415089256,0.02837431689807206,adult,nn,precision
+44,Sex_1,0.001359720451872566,0.020006339775927515,adult,nn,precision
+0,Age,0.13220370947885393,0.026302455777038485,adult,logit,precision
+1,Education-Num,0.14203342861157087,0.028572505256138997,adult,logit,precision
+2,Capital Gain,0.029975915222907205,0.020680407352689816,adult,logit,precision
+3,Capital Loss,0.06759049698061209,0.02152852844293659,adult,logit,precision
+4,Hours per week,0.002140508223795751,0.024494988209041967,adult,logit,precision
+5,Workclass_0,0.0,0.02199379304412022,adult,logit,precision
+6,Workclass_1,0.01052260184302194,0.02413767461405314,adult,logit,precision
+7,Workclass_2,0.0016024207528811056,0.02199379304412022,adult,logit,precision
+8,Workclass_4,0.1054632623367624,0.02123314355705784,adult,logit,precision
+9,Workclass_5,0.0011071537545379222,0.022708420234097873,adult,logit,precision
+10,Workclass_6,0.0002847804418983396,0.02199379304412022,adult,logit,precision
+11,Workclass_7,0.0,0.02199379304412022,adult,logit,precision
+12,Marital Status_0,0.00036570084991247877,0.02199379304412022,adult,logit,precision
+13,Marital Status_1,0.0,0.02199379304412022,adult,logit,precision
+14,Marital Status_2,0.06917585522122374,0.018316313108115052,adult,logit,precision
+15,Marital Status_3,0.0,0.02199379304412022,adult,logit,precision
+16,Marital Status_4,0.08943179603923058,0.019116429406529748,adult,logit,precision
+17,Marital Status_5,0.0004532806103535022,0.02199379304412022,adult,logit,precision
+18,Marital Status_6,0.0,0.02199379304412022,adult,logit,precision
+19,Occupation_0,0.0,0.02199379304412022,adult,logit,precision
+20,Occupation_1,0.0005953517245920717,0.02199379304412022,adult,logit,precision
+21,Occupation_10,0.025088829708081656,0.02261909183535066,adult,logit,precision
+22,Occupation_11,0.0005196144039521157,0.02199379304412022,adult,logit,precision
+23,Occupation_12,0.015731684884363627,0.02199379304412022,adult,logit,precision
+24,Occupation_13,0.0011318615162508295,0.02261909183535066,adult,logit,precision
+25,Occupation_14,0.0012991614794234348,0.02199379304412022,adult,logit,precision
+26,Occupation_3,5.273631637507284e-05,0.02199379304412022,adult,logit,precision
+27,Occupation_4,0.022286995103561698,0.02199379304412022,adult,logit,precision
+28,Occupation_5,0.0008160203475659597,0.02199379304412022,adult,logit,precision
+29,Occupation_6,0.001404230790690218,0.02199379304412022,adult,logit,precision
+30,Occupation_7,0.0041986789141226525,0.02199379304412022,adult,logit,precision
+31,Occupation_8,0.008213024378339673,0.02199379304412022,adult,logit,precision
+32,Relationship_0,0.015030976105714963,0.02199379304412022,adult,logit,precision
+33,Relationship_1,0.0009468512977414372,0.02199379304412022,adult,logit,precision
+34,Relationship_2,0.0,0.02199379304412022,adult,logit,precision
+35,Relationship_3,0.04974687980221156,0.024477062412291237,adult,logit,precision
+36,Relationship_4,0.07120047925631875,0.020417730214403733,adult,logit,precision
+37,Relationship_5,0.0006370203263056838,0.02199379304412022,adult,logit,precision
+38,Race_0,0.0,0.02199379304412022,adult,logit,precision
+39,Race_1,0.004912152674757567,0.022797748632845064,adult,logit,precision
+40,Race_2,0.011195552412301758,0.02199379304412022,adult,logit,precision
+41,Race_3,0.0,0.02199379304412022,adult,logit,precision
+42,Race_4,0.04069565325515535,0.021801097237584624,adult,logit,precision
+43,Sex_0,0.027472376758096745,0.02199379304412022,adult,logit,precision
+44,Sex_1,0.044472958176515455,0.022351106639109046,adult,logit,precision
+0,Age,0.08194255171259351,0.018462556985038053,adult,rf,precision
+1,Education-Num,0.14875238363682872,0.022619497259020124,adult,rf,precision
+2,Capital Gain,0.03666248188029364,0.022919739854985747,adult,rf,precision
+3,Capital Loss,0.01953129501158042,0.022919739854985747,adult,rf,precision
+4,Hours per week,0.07584637826770252,0.002179287975441415,adult,rf,precision
+5,Workclass_0,0.0,0.022919739854985747,adult,rf,precision
+6,Workclass_1,0.038970315372613105,0.02688224922001672,adult,rf,precision
+7,Workclass_2,0.014915522413372576,0.022919739854985747,adult,rf,precision
+8,Workclass_4,0.03932627015026978,0.022919739854985747,adult,rf,precision
+9,Workclass_5,0.0026102978312628733,0.022919739854985747,adult,rf,precision
+10,Workclass_6,0.009156539531979311,0.022919739854985747,adult,rf,precision
+11,Workclass_7,5.058979537332585e-05,0.022919739854985747,adult,rf,precision
+12,Marital Status_0,0.002427455523251374,0.022919739854985747,adult,rf,precision
+13,Marital Status_1,0.0,0.022919739854985747,adult,rf,precision
+14,Marital Status_2,0.11231281590027296,0.023463345299071032,adult,rf,precision
+15,Marital Status_3,0.0,0.022919739854985747,adult,rf,precision
+16,Marital Status_4,0.03291795229436007,0.02118035141793302,adult,rf,precision
+17,Marital Status_5,0.0,0.022919739854985747,adult,rf,precision
+18,Marital Status_6,3.297668901057512e-05,0.022919739854985747,adult,rf,precision
+19,Occupation_0,0.0,0.022919739854985747,adult,rf,precision
+20,Occupation_1,0.034028575076101304,0.020636792531353997,adult,rf,precision
+21,Occupation_10,0.037050015746156684,0.022919739854985747,adult,rf,precision
+22,Occupation_11,0.005616611175501387,0.022919739854985747,adult,rf,precision
+23,Occupation_12,0.0054882096294990084,0.022919739854985747,adult,rf,precision
+24,Occupation_13,0.010050776107077471,0.022094359070998614,adult,rf,precision
+25,Occupation_14,0.0008897798341256498,0.022919739854985747,adult,rf,precision
+26,Occupation_3,0.004923356693333851,0.022919739854985747,adult,rf,precision
+27,Occupation_4,0.044417284009225275,0.02126897828701151,adult,rf,precision
+28,Occupation_5,0.0027154543841973002,0.022919739854985747,adult,rf,precision
+29,Occupation_6,0.0014007377262683315,0.022919739854985747,adult,rf,precision
+30,Occupation_7,0.0060393074989475585,0.022919739854985747,adult,rf,precision
+31,Occupation_8,0.006020593308718461,0.024132097320212036,adult,rf,precision
+32,Relationship_0,0.005420973947105631,0.022919739854985747,adult,rf,precision
+33,Relationship_1,0.0026008554232952617,0.022919739854985747,adult,rf,precision
+34,Relationship_2,0.0,0.022919739854985747,adult,rf,precision
+35,Relationship_3,0.028285059630570045,0.022919739854985747,adult,rf,precision
+36,Relationship_4,0.11698986811067766,0.019215217271989476,adult,rf,precision
+37,Relationship_5,0.01168710953158443,0.021858535989859436,adult,rf,precision
+38,Race_0,0.0,0.022919739854985747,adult,rf,precision
+39,Race_1,0.020875729770488998,0.023636259877636782,adult,rf,precision
+40,Race_2,0.004766681546124767,0.022919739854985747,adult,rf,precision
+41,Race_3,0.0,0.022919739854985747,adult,rf,precision
+42,Race_4,0.012688153205539654,0.021858535989859436,adult,rf,precision
+43,Sex_0,0.010814910867482652,0.022919739854985747,adult,rf,precision
+44,Sex_1,0.01177413076721382,0.022919739854985747,adult,rf,precision
+0,Age,0.33874668908108735,0.016774453103913383,adult,knn,precision
+1,Education-Num,0.20477536645727362,0.007657459361892108,adult,knn,precision
+2,Capital Gain,0.08993984924854954,0.018382320580607694,adult,knn,precision
+3,Capital Loss,0.16834415813937545,0.024985408047005837,adult,knn,precision
+4,Hours per week,0.1400858854671421,0.023531373825855482,adult,knn,precision
+5,Workclass_0,0.0,0.022716724627018136,adult,knn,precision
+6,Workclass_1,0.0011764058944125372,0.022716724627018136,adult,knn,precision
+7,Workclass_2,0.000298402772567647,0.022716724627018136,adult,knn,precision
+8,Workclass_4,0.004849169941007409,0.022716724627018136,adult,knn,precision
+9,Workclass_5,0.0003068619134566988,0.022716724627018136,adult,knn,precision
+10,Workclass_6,0.0001050307879616133,0.022716724627018136,adult,knn,precision
+11,Workclass_7,0.00046767128423416525,0.022716724627018136,adult,knn,precision
+12,Marital Status_0,0.001132444100133409,0.022716724627018136,adult,knn,precision
+13,Marital Status_1,0.0,0.022716724627018136,adult,knn,precision
+14,Marital Status_2,0.008281141325715419,0.022716724627018136,adult,knn,precision
+15,Marital Status_3,0.0,0.022716724627018136,adult,knn,precision
+16,Marital Status_4,0.0038143185210104237,0.022716724627018136,adult,knn,precision
+17,Marital Status_5,0.0,0.022716724627018136,adult,knn,precision
+18,Marital Status_6,0.0,0.022716724627018136,adult,knn,precision
+19,Occupation_0,0.0,0.022716724627018136,adult,knn,precision
+20,Occupation_1,0.0006840275837987105,0.022716724627018136,adult,knn,precision
+21,Occupation_10,0.003312743200880372,0.022716724627018136,adult,knn,precision
+22,Occupation_11,0.0,0.022716724627018136,adult,knn,precision
+23,Occupation_12,0.0,0.022716724627018136,adult,knn,precision
+24,Occupation_13,0.001146192092110592,0.022716724627018136,adult,knn,precision
+25,Occupation_14,0.00020708080589096898,0.022716724627018136,adult,knn,precision
+26,Occupation_3,0.0006929918664656232,0.022716724627018136,adult,knn,precision
+27,Occupation_4,0.0,0.022716724627018136,adult,knn,precision
+28,Occupation_5,0.0,0.022716724627018136,adult,knn,precision
+29,Occupation_6,0.0,0.022716724627018136,adult,knn,precision
+30,Occupation_7,0.0003246246875352476,0.022716724627018136,adult,knn,precision
+31,Occupation_8,0.0007790737004870639,0.022716724627018136,adult,knn,precision
+32,Relationship_0,0.0007877340913469314,0.022716724627018136,adult,knn,precision
+33,Relationship_1,0.00014636404595403928,0.022716724627018136,adult,knn,precision
+34,Relationship_2,0.00019465334406122283,0.022716724627018136,adult,knn,precision
+35,Relationship_3,0.006308523783951481,0.022716724627018136,adult,knn,precision
+36,Relationship_4,0.00848406370824599,0.022716724627018136,adult,knn,precision
+37,Relationship_5,0.00042700955307114325,0.022716724627018136,adult,knn,precision
+38,Race_0,0.0,0.022716724627018136,adult,knn,precision
+39,Race_1,0.0,0.022716724627018136,adult,knn,precision
+40,Race_2,0.0010403264435521456,0.022716724627018136,adult,knn,precision
+41,Race_3,0.0,0.022716724627018136,adult,knn,precision
+42,Race_4,0.0016862121011402555,0.022716724627018136,adult,knn,precision
+43,Sex_0,0.005546641720603138,0.022716724627018136,adult,knn,precision
+44,Sex_1,0.005908342336977729,0.022716724627018136,adult,knn,precision
+0,Age,0.11224740696886983,0.015320128316714601,adult,gbc,precision
+1,Education-Num,0.19353910624320186,0.28484460330436223,adult,gbc,precision
+2,Capital Gain,0.08769451053640559,0.02310850121608978,adult,gbc,precision
+3,Capital Loss,0.05516321836108909,0.0,adult,gbc,precision
+4,Hours per week,0.07320416147267017,0.2202655917453051,adult,gbc,precision
+5,Workclass_0,5.1128085677070726e-05,0.0,adult,gbc,precision
+6,Workclass_1,0.0825005524421965,0.05366926780065075,adult,gbc,precision
+7,Workclass_2,0.022798345569812056,0.0014705409864781526,adult,gbc,precision
+8,Workclass_4,0.01967654700128156,0.0,adult,gbc,precision
+9,Workclass_5,0.001651163343454938,0.0,adult,gbc,precision
+10,Workclass_6,0.003570658736064067,0.010563886270212144,adult,gbc,precision
+11,Workclass_7,4.276017369672635e-05,0.0,adult,gbc,precision
+12,Marital Status_0,0.0,0.0,adult,gbc,precision
+13,Marital Status_1,0.0,0.0,adult,gbc,precision
+14,Marital Status_2,0.1576958137975984,0.07011237774096088,adult,gbc,precision
+15,Marital Status_3,0.0,0.0,adult,gbc,precision
+16,Marital Status_4,0.0018440371673628794,0.0,adult,gbc,precision
+17,Marital Status_5,3.425482807054367e-05,0.0,adult,gbc,precision
+18,Marital Status_6,0.0,0.0,adult,gbc,precision
+19,Occupation_0,2.5320762753386454e-05,0.0,adult,gbc,precision
+20,Occupation_1,0.0372208591216702,0.03183885581900408,adult,gbc,precision
+21,Occupation_10,0.0008327811359526298,0.0,adult,gbc,precision
+22,Occupation_11,0.0012747312460094208,0.0,adult,gbc,precision
+23,Occupation_12,0.0031080716473379532,0.0,adult,gbc,precision
+24,Occupation_13,0.015756189013156115,0.007202649729689898,adult,gbc,precision
+25,Occupation_14,0.0,0.0,adult,gbc,precision
+26,Occupation_3,7.987636485789808e-05,0.0,adult,gbc,precision
+27,Occupation_4,0.05975874942913053,0.09275412263012331,adult,gbc,precision
+28,Occupation_5,0.0,0.0,adult,gbc,precision
+29,Occupation_6,0.0,0.0,adult,gbc,precision
+30,Occupation_7,0.0,0.0,adult,gbc,precision
+31,Occupation_8,0.002404987909931509,0.017606477117020826,adult,gbc,precision
+32,Relationship_0,0.0,0.0,adult,gbc,precision
+33,Relationship_1,6.972049429585497e-05,0.0,adult,gbc,precision
+34,Relationship_2,0.0,0.0,adult,gbc,precision
+35,Relationship_3,0.0,0.0,adult,gbc,precision
+36,Relationship_4,0.014008950267088382,0.0,adult,gbc,precision
+37,Relationship_5,0.010187329480639907,0.028000300824171404,adult,gbc,precision
+38,Race_0,0.0,0.0,adult,gbc,precision
+39,Race_1,0.04260362179144403,0.1432426964992168,adult,gbc,precision
+40,Race_2,0.0002453210856057061,0.0,adult,gbc,precision
+41,Race_3,0.0,0.0,adult,gbc,precision
+42,Race_4,0.0006360162194469797,0.0,adult,gbc,precision
+43,Sex_0,0.0,0.0,adult,gbc,precision
+44,Sex_1,7.380930322835639e-05,0.0,adult,gbc,precision
+0,Age,0.06896492091357662,0.10582010582010619,adult,nn,recall
+1,Education-Num,0.04154329193895341,0.014109347442679847,adult,nn,recall
+2,Capital Gain,0.20658598375821643,0.0,adult,nn,recall
+3,Capital Loss,0.15890538190244394,0.08112874779541396,adult,nn,recall
+4,Hours per week,0.0316980647349074,0.1604938271604942,adult,nn,recall
+5,Workclass_0,4.533290970510153e-05,0.0,adult,nn,recall
+6,Workclass_1,0.013269100471448764,0.008818342151675712,adult,nn,recall
+7,Workclass_2,0.006684103795643341,0.07407407407407433,adult,nn,recall
+8,Workclass_4,0.05407674625020732,0.07760141093474415,adult,nn,recall
+9,Workclass_5,0.001968879603946199,0.0,adult,nn,recall
+10,Workclass_6,0.0028423797044716697,0.0,adult,nn,recall
+11,Workclass_7,0.0,0.0,adult,nn,recall
+12,Marital Status_0,0.009596980314335535,0.0,adult,nn,recall
+13,Marital Status_1,0.0,0.0,adult,nn,recall
+14,Marital Status_2,0.008213525173629428,0.0,adult,nn,recall
+15,Marital Status_3,0.0,0.0,adult,nn,recall
+16,Marital Status_4,0.06299149866622307,0.022927689594356145,adult,nn,recall
+17,Marital Status_5,0.002812177840496318,0.0,adult,nn,recall
+18,Marital Status_6,0.00010616704622145608,0.0,adult,nn,recall
+19,Occupation_0,0.0,0.0,adult,nn,recall
+20,Occupation_1,0.004978916206268031,0.0,adult,nn,recall
+21,Occupation_10,0.027920706417714408,0.017636684303351424,adult,nn,recall
+22,Occupation_11,0.004248695061786082,0.058201058201058406,adult,nn,recall
+23,Occupation_12,0.02242172582247415,0.0,adult,nn,recall
+24,Occupation_13,0.005370194853011105,0.017636684303351424,adult,nn,recall
+25,Occupation_14,0.008946924515550224,0.0,adult,nn,recall
+26,Occupation_3,0.004808803545005086,0.0,adult,nn,recall
+27,Occupation_4,0.02062327782409793,0.012345679012345527,adult,nn,recall
+28,Occupation_5,0.013466697704869784,0.0,adult,nn,recall
+29,Occupation_6,0.0052440225854639855,0.02645502645502596,adult,nn,recall
+30,Occupation_7,0.01757576507871099,0.017636684303350837,adult,nn,recall
+31,Occupation_8,0.012000609259315937,0.0,adult,nn,recall
+32,Relationship_0,0.025028457674519788,0.03527336860670226,adult,nn,recall
+33,Relationship_1,0.0027451056965165574,0.0,adult,nn,recall
+34,Relationship_2,0.0004627124592817268,0.0,adult,nn,recall
+35,Relationship_3,0.03706808619898113,0.06349206349206313,adult,nn,recall
+36,Relationship_4,0.03151913403996151,0.0,adult,nn,recall
+37,Relationship_5,0.0009351982306259906,0.0,adult,nn,recall
+38,Race_0,0.0001253503689087574,0.0,adult,nn,recall
+39,Race_1,0.004454430772984407,0.0,adult,nn,recall
+40,Race_2,0.02219346385672244,0.04938271604938269,adult,nn,recall
+41,Race_3,0.0,0.0,adult,nn,recall
+42,Race_4,0.028105632464250276,0.026455026455026547,adult,nn,recall
+43,Sex_0,0.028004312729851658,0.13051146384479725,adult,nn,recall
+44,Sex_1,0.0014472416087020809,0.0,adult,nn,recall
+0,Age,0.13236442757253897,0.15281501340482695,adult,logit,recall
+1,Education-Num,0.14228466697528444,0.27613941018766697,adult,logit,recall
+2,Capital Gain,0.029124041945358423,0.04021447721179633,adult,logit,recall
+3,Capital Loss,0.06782923710757484,8.929407704759982e-16,adult,logit,recall
+4,Hours per week,0.0031255282213954547,0.07506702412868618,adult,logit,recall
+5,Workclass_0,0.0,0.0,adult,logit,recall
+6,Workclass_1,0.010517198231071927,0.0,adult,logit,recall
+7,Workclass_2,0.0016006450335629393,0.0,adult,logit,recall
+8,Workclass_4,0.10583233450854629,0.029490616621984274,adult,logit,recall
+9,Workclass_5,0.0010743773369993308,0.0,adult,logit,recall
+10,Workclass_6,0.00029536414538055216,0.0,adult,logit,recall
+11,Workclass_7,0.0,0.0,adult,logit,recall
+12,Marital Status_0,0.0003551466204076864,0.0,adult,logit,recall
+13,Marital Status_1,0.0,0.0,adult,logit,recall
+14,Marital Status_2,0.06930400009044058,0.08042895442359356,adult,logit,recall
+15,Marital Status_3,0.0,0.0,adult,logit,recall
+16,Marital Status_4,0.08996034195234058,0.0965147453083112,adult,logit,recall
+17,Marital Status_5,0.00041574681810197325,0.0,adult,logit,recall
+18,Marital Status_6,0.0,0.0,adult,logit,recall
+19,Occupation_0,0.0,0.0,adult,logit,recall
+20,Occupation_1,0.0005519384509607316,0.0,adult,logit,recall
+21,Occupation_10,0.025038190659996257,0.034852546916889854,adult,logit,recall
+22,Occupation_11,0.0005177565213488318,0.0,adult,logit,recall
+23,Occupation_12,0.015266923040169232,0.0,adult,logit,recall
+24,Occupation_13,0.001100444496783235,0.016085790884718534,adult,logit,recall
+25,Occupation_14,0.0013338248037817644,0.0,adult,logit,recall
+26,Occupation_3,0.0,0.0,adult,logit,recall
+27,Occupation_4,0.02258233130264503,0.0,adult,logit,recall
+28,Occupation_5,0.0008758556816291581,0.0,adult,logit,recall
+29,Occupation_6,0.0013581253985089174,0.0,adult,logit,recall
+30,Occupation_7,0.0041997406020909435,0.0,adult,logit,recall
+31,Occupation_8,0.008121819367110624,0.0,adult,logit,recall
+32,Relationship_0,0.01399518982000863,0.0,adult,logit,recall
+33,Relationship_1,0.0009494750006352876,0.0,adult,logit,recall
+34,Relationship_2,0.0,0.0,adult,logit,recall
+35,Relationship_3,0.04967809237793519,0.08847184986595014,adult,logit,recall
+36,Relationship_4,0.07130804138210685,0.01608579088471764,adult,logit,recall
+37,Relationship_5,0.0007291163438327466,0.0,adult,logit,recall
+38,Race_0,0.0,0.0,adult,logit,recall
+39,Race_1,0.005009713131043597,0.0,adult,logit,recall
+40,Race_2,0.011036853539306425,0.0,adult,logit,recall
+41,Race_3,0.0,0.0,adult,logit,recall
+42,Race_4,0.040773085445300394,0.06702412868632691,adult,logit,recall
+43,Sex_0,0.02722733331230931,0.0,adult,logit,recall
+44,Sex_1,0.04426309276349295,0.02680965147453059,adult,logit,recall
+0,Age,0.08167431923291181,0.10327455919395184,adult,rf,recall
+1,Education-Num,0.14882362991813997,0.08816120906800688,adult,rf,recall
+2,Capital Gain,0.037144857182710676,8.389594644522335e-16,adult,rf,recall
+3,Capital Loss,0.019869535900460623,8.389594644522335e-16,adult,rf,recall
+4,Hours per week,0.07528961305670245,0.3979848866498624,adult,rf,recall
+5,Workclass_0,0.0,8.389594644522335e-16,adult,rf,recall
+6,Workclass_1,0.03910470690321616,0.05289672544080446,adult,rf,recall
+7,Workclass_2,0.014735432965909873,8.389594644522335e-16,adult,rf,recall
+8,Workclass_4,0.03918355244898537,8.389594644522335e-16,adult,rf,recall
+9,Workclass_5,0.003051497031600249,8.389594644522335e-16,adult,rf,recall
+10,Workclass_6,0.009198111588235153,0.017632241813601207,adult,rf,recall
+11,Workclass_7,0.0002067574827354878,8.389594644522335e-16,adult,rf,recall
+12,Marital Status_0,0.0024784710599044853,8.389594644522335e-16,adult,rf,recall
+13,Marital Status_1,0.0,8.389594644522335e-16,adult,rf,recall
+14,Marital Status_2,0.11198371616871007,0.017632241813601207,adult,rf,recall
+15,Marital Status_3,0.0,8.389594644522335e-16,adult,rf,recall
+16,Marital Status_4,0.033290572462135314,0.10327455919395101,adult,rf,recall
+17,Marital Status_5,0.00020847709905781934,8.389594644522335e-16,adult,rf,recall
+18,Marital Status_6,0.00013169185211381264,8.389594644522335e-16,adult,rf,recall
+19,Occupation_0,0.0,8.389594644522335e-16,adult,rf,recall
+20,Occupation_1,0.03388341811411767,0.020151133501259962,adult,rf,recall
+21,Occupation_10,0.036326064027076166,8.389594644522335e-16,adult,rf,recall
+22,Occupation_11,0.005573115115564178,8.389594644522335e-16,adult,rf,recall
+23,Occupation_12,0.005802241671602067,8.389594644522335e-16,adult,rf,recall
+24,Occupation_13,0.009655929725528749,8.389594644522335e-16,adult,rf,recall
+25,Occupation_14,0.0008585989053446609,8.389594644522335e-16,adult,rf,recall
+26,Occupation_3,0.005327790931600744,8.389594644522335e-16,adult,rf,recall
+27,Occupation_4,0.04468706383584706,8.389594644522335e-16,adult,rf,recall
+28,Occupation_5,0.0026725626410087854,8.389594644522335e-16,adult,rf,recall
+29,Occupation_6,0.0013959086461466875,8.389594644522335e-16,adult,rf,recall
+30,Occupation_7,0.006054141122875281,8.389594644522335e-16,adult,rf,recall
+31,Occupation_8,0.006585584329346371,8.389594644522335e-16,adult,rf,recall
+32,Relationship_0,0.005384729109913672,8.389594644522335e-16,adult,rf,recall
+33,Relationship_1,0.002536676037051626,0.012594458438287057,adult,rf,recall
+34,Relationship_2,0.0,8.389594644522335e-16,adult,rf,recall
+35,Relationship_3,0.027911330038159987,8.389594644522335e-16,adult,rf,recall
+36,Relationship_4,0.11709382156480462,0.0982367758186377,adult,rf,recall
+37,Relationship_5,0.011855336762872929,8.389594644522335e-16,adult,rf,recall
+38,Race_0,0.0,8.389594644522335e-16,adult,rf,recall
+39,Race_1,0.020784403812759287,0.06045340050377653,adult,rf,recall
+40,Race_2,0.004580856107480263,8.389594644522335e-16,adult,rf,recall
+41,Race_3,0.0,8.389594644522335e-16,adult,rf,recall
+42,Race_4,0.01258504026264683,0.027707808564232026,adult,rf,recall
+43,Sex_0,0.010554600852092503,8.389594644522335e-16,adult,rf,recall
+44,Sex_1,0.01151584403263052,8.389594644522335e-16,adult,rf,recall
+0,Age,0.3415933188056688,0.4022346368715081,adult,knn,recall
+1,Education-Num,0.2051006062658747,0.11173184357541914,adult,knn,recall
+2,Capital Gain,0.089670765290608,0.05865921787709521,adult,knn,recall
+3,Capital Loss,0.16616334296311344,0.08379888268156366,adult,knn,recall
+4,Hours per week,0.13991533258928837,0.3212290502793297,adult,knn,recall
+5,Workclass_0,0.0,0.0,adult,knn,recall
+6,Workclass_1,0.0008081555856959235,0.0,adult,knn,recall
+7,Workclass_2,0.0003238602261587505,0.0,adult,knn,recall
+8,Workclass_4,0.004742176716405812,0.0,adult,knn,recall
+9,Workclass_5,0.0,0.0,adult,knn,recall
+10,Workclass_6,0.00014468436450926518,0.0,adult,knn,recall
+11,Workclass_7,0.000135555650996082,0.0,adult,knn,recall
+12,Marital Status_0,0.00124429110825885,0.0,adult,knn,recall
+13,Marital Status_1,0.0,0.0,adult,knn,recall
+14,Marital Status_2,0.007735861034073077,0.0,adult,knn,recall
+15,Marital Status_3,0.0,0.0,adult,knn,recall
+16,Marital Status_4,0.00404917576639865,0.0,adult,knn,recall
+17,Marital Status_5,0.0,0.0,adult,knn,recall
+18,Marital Status_6,0.0,0.0,adult,knn,recall
+19,Occupation_0,0.0,0.0,adult,knn,recall
+20,Occupation_1,0.00044169883452114134,0.0,adult,knn,recall
+21,Occupation_10,0.004020828675710786,0.0,adult,knn,recall
+22,Occupation_11,0.0,0.0,adult,knn,recall
+23,Occupation_12,0.0002064952889334896,0.0,adult,knn,recall
+24,Occupation_13,0.0007319013405231591,0.0,adult,knn,recall
+25,Occupation_14,0.0,0.0,adult,knn,recall
+26,Occupation_3,0.0006825338994777774,0.0,adult,knn,recall
+27,Occupation_4,0.00021292099059152955,0.0,adult,knn,recall
+28,Occupation_5,0.0,0.0,adult,knn,recall
+29,Occupation_6,0.0,0.0223463687150842,adult,knn,recall
+30,Occupation_7,0.0004424810560489289,0.0,adult,knn,recall
+31,Occupation_8,0.0008113356695711882,0.0,adult,knn,recall
+32,Relationship_0,0.0008436658815137859,0.0,adult,knn,recall
+33,Relationship_1,0.00017970444459627965,0.0,adult,knn,recall
+34,Relationship_2,0.0,0.0,adult,knn,recall
+35,Relationship_3,0.006080482719089674,0.0,adult,knn,recall
+36,Relationship_4,0.009674549856900303,0.0,adult,knn,recall
+37,Relationship_5,0.00026668802917567376,0.0,adult,knn,recall
+38,Race_0,0.0,0.0,adult,knn,recall
+39,Race_1,0.0,0.0,adult,knn,recall
+40,Race_2,0.0007371935506709922,0.0,adult,knn,recall
+41,Race_3,0.0,0.0,adult,knn,recall
+42,Race_4,0.0014034547112373975,0.0,adult,knn,recall
+43,Sex_0,0.005443558176539739,0.0,adult,knn,recall
+44,Sex_1,0.00619338050784817,0.0,adult,knn,recall
+0,Age,0.1125496875122387,0.05720823798627043,adult,gbc,recall
+1,Education-Num,0.1931781015834477,0.13501144164759804,adult,gbc,recall
+2,Capital Gain,0.08720914599269926,0.013729977116704019,adult,gbc,recall
+3,Capital Loss,0.055599789919128235,0.0,adult,gbc,recall
+4,Hours per week,0.07338102243100865,0.21510297482837618,adult,gbc,recall
+5,Workclass_0,0.0,0.0,adult,gbc,recall
+6,Workclass_1,0.08192843487531926,0.11670480549199064,adult,gbc,recall
+7,Workclass_2,0.02265256439343031,0.011441647597253477,adult,gbc,recall
+8,Workclass_4,0.019302741404388507,0.0,adult,gbc,recall
+9,Workclass_5,0.001528672983934052,0.0,adult,gbc,recall
+10,Workclass_6,0.0037830259731173018,0.01830663615560663,adult,gbc,recall
+11,Workclass_7,6.371547083551025e-05,0.0,adult,gbc,recall
+12,Marital Status_0,0.00024249424583437635,0.0,adult,gbc,recall
+13,Marital Status_1,0.0,0.0,adult,gbc,recall
+14,Marital Status_2,0.15773004708195892,0.09382151029748292,adult,gbc,recall
+15,Marital Status_3,0.0,0.0,adult,gbc,recall
+16,Marital Status_4,0.0022669236150916943,0.0,adult,gbc,recall
+17,Marital Status_5,0.0,0.0,adult,gbc,recall
+18,Marital Status_6,0.0,0.0,adult,gbc,recall
+19,Occupation_0,0.0,0.0,adult,gbc,recall
+20,Occupation_1,0.037498334711311435,0.11212814645308955,adult,gbc,recall
+21,Occupation_10,0.0006868093726731637,0.0,adult,gbc,recall
+22,Occupation_11,0.0011891306296182944,0.0,adult,gbc,recall
+23,Occupation_12,0.003089554739765091,0.0,adult,gbc,recall
+24,Occupation_13,0.015856544182207832,0.04576659038901619,adult,gbc,recall
+25,Occupation_14,6.241804363211014e-05,0.0,adult,gbc,recall
+26,Occupation_3,4.622103527301666e-05,0.0,adult,gbc,recall
+27,Occupation_4,0.05861523986867528,0.10068649885583532,adult,gbc,recall
+28,Occupation_5,0.0,0.0,adult,gbc,recall
+29,Occupation_6,0.0,0.0,adult,gbc,recall
+30,Occupation_7,0.0,0.0,adult,gbc,recall
+31,Occupation_8,0.002121620145365752,0.0,adult,gbc,recall
+32,Relationship_0,0.0001667462837014386,0.0,adult,gbc,recall
+33,Relationship_1,0.0,0.0,adult,gbc,recall
+34,Relationship_2,5.935464628679141e-05,0.0,adult,gbc,recall
+35,Relationship_3,0.0,0.0,adult,gbc,recall
+36,Relationship_4,0.015177140664780571,0.0,adult,gbc,recall
+37,Relationship_5,0.010313258823904513,0.0022883295194497805,adult,gbc,recall
+38,Race_0,6.627235433765484e-05,0.0,adult,gbc,recall
+39,Race_1,0.04282699248835994,0.07780320366132684,adult,gbc,recall
+40,Race_2,0.0003666070340368235,0.0,adult,gbc,recall
+41,Race_3,0.0,0.0,adult,gbc,recall
+42,Race_4,0.0003906061058418041,0.0,adult,gbc,recall
+43,Sex_0,0.0,0.0,adult,gbc,recall
+44,Sex_1,5.078138779610067e-05,0.0,adult,gbc,recall
+0,alcohol,0.015707324888728072,0.10854893138357698,wine,nn,accuracy
+1,malic_acid,0.07159082913139667,0.0191226096737904,wine,nn,accuracy
+2,ash,0.009652237738195638,0.011248593925759469,wine,nn,accuracy
+3,alcalinity_of_ash,0.025969537774041367,0.07311586051743509,wine,nn,accuracy
+4,magnesium,0.08812934936354472,0.2930258717660295,wine,nn,accuracy
+5,total_phenols,0.008919734710024371,0.0,wine,nn,accuracy
+6,flavanoids,0.0601717326343737,0.01912260967379085,wine,nn,accuracy
+7,nonflavanoid_phenols,0.005039804229297849,0.0,wine,nn,accuracy
+8,proanthocyanins,0.007349097287995903,0.0033745781777278633,wine,nn,accuracy
+9,color_intensity,0.10073477186511057,0.06130483689538824,wine,nn,accuracy
+10,hue,0.012607483598707121,0.0061867266591676745,wine,nn,accuracy
+11,od280/od315_of_diluted_wines,0.029447206563138626,0.016872890888638865,wine,nn,accuracy
+12,proline,0.5646808902154454,0.388076490438695,wine,nn,accuracy
+0,alcohol,0.018345110406741194,0.08854961832061038,wine,logit,accuracy
+1,malic_acid,0.05779990350838483,0.0183206106870233,wine,logit,accuracy
+2,ash,0.0038126868364942814,0.027480916030534645,wine,logit,accuracy
+3,alcalinity_of_ash,0.0685226367776528,0.19465648854961828,wine,logit,accuracy
+4,magnesium,0.046201847490591426,0.18320610687022873,wine,logit,accuracy
+5,total_phenols,0.018299717118824155,3.0509945714889755e-16,wine,logit,accuracy
+6,flavanoids,0.07004240486766877,0.016030534351145386,wine,logit,accuracy
+7,nonflavanoid_phenols,0.0010031273998692795,3.0509945714889755e-16,wine,logit,accuracy
+8,proanthocyanins,0.014763504142558604,0.027480916030534645,wine,logit,accuracy
+9,color_intensity,0.2556399989978775,0.1526717557251901,wine,logit,accuracy
+10,hue,0.0036825630469394877,0.01603053435114508,wine,logit,accuracy
+11,od280/od315_of_diluted_wines,0.03875386108112819,0.017557251908396923,wine,logit,accuracy
+12,proline,0.4031326383252696,0.25801526717557194,wine,logit,accuracy
+0,alcohol,0.13982766711123412,0.3157894736842069,wine,rf,accuracy
+1,malic_acid,0.021297708529358677,1.0017049846241953e-15,wine,rf,accuracy
+2,ash,0.011753223823013463,1.0017049846241953e-15,wine,rf,accuracy
+3,alcalinity_of_ash,0.018120036118798373,1.0017049846241953e-15,wine,rf,accuracy
+4,magnesium,0.02787425846816723,0.09022556390977397,wine,rf,accuracy
+5,total_phenols,0.06552698755624603,1.0017049846241953e-15,wine,rf,accuracy
+6,flavanoids,0.163925455507722,0.09022556390977497,wine,rf,accuracy
+7,nonflavanoid_phenols,0.012085702003807817,1.0017049846241953e-15,wine,rf,accuracy
+8,proanthocyanins,0.021902419288201847,1.0017049846241953e-15,wine,rf,accuracy
+9,color_intensity,0.17953638844905162,0.2406015037593966,wine,rf,accuracy
+10,hue,0.05575485736043581,1.0017049846241953e-15,wine,rf,accuracy
+11,od280/od315_of_diluted_wines,0.11954825649340003,0.07017543859649175,wine,rf,accuracy
+12,proline,0.16284703929056296,0.1929824561403488,wine,rf,accuracy
+0,alcohol,0.001491648720229791,0.033737024221453006,wine,knn,accuracy
+1,malic_acid,0.003282350645020237,0.031141868512110385,wine,knn,accuracy
+2,ash,0.00020592362163997707,0.0,wine,knn,accuracy
+3,alcalinity_of_ash,0.008531686311272428,0.014705882352941044,wine,knn,accuracy
+4,magnesium,0.08350359688022964,0.2551903114186851,wine,knn,accuracy
+5,total_phenols,0.00038413237416424335,0.024221453287197544,wine,knn,accuracy
+6,flavanoids,0.0009306050834670174,0.024221453287197544,wine,knn,accuracy
+7,nonflavanoid_phenols,0.00017218629348436177,0.0,wine,knn,accuracy
+8,proanthocyanins,0.00033562803571181136,0.005190311418685237,wine,knn,accuracy
+9,color_intensity,0.011697287427537688,0.03200692041522471,wine,knn,accuracy
+10,hue,0.00029224929095175765,0.0,wine,knn,accuracy
+11,od280/od315_of_diluted_wines,0.0006158886461586368,0.03114186851211108,wine,knn,accuracy
+12,proline,0.8885568166701324,0.5484429065743944,wine,knn,accuracy
+0,alcohol,0.014360212105852269,0.0,wine,gbc,accuracy
+1,malic_acid,0.07036409174812586,0.024968789013733752,wine,gbc,accuracy
+2,ash,0.004849397114987353,0.0,wine,gbc,accuracy
+3,alcalinity_of_ash,0.028299303355032803,0.044943820224719655,wine,gbc,accuracy
+4,magnesium,0.06638330064511207,0.0561797752808977,wine,gbc,accuracy
+5,total_phenols,0.004924446613168016,0.0,wine,gbc,accuracy
+6,flavanoids,0.23890562906155435,0.24968789013732903,wine,gbc,accuracy
+7,nonflavanoid_phenols,0.0017460216020942156,0.0,wine,gbc,accuracy
+8,proanthocyanins,0.0019966230149476216,0.0,wine,gbc,accuracy
+9,color_intensity,0.3435229072587605,0.4644194756554306,wine,gbc,accuracy
+10,hue,0.0039585903598821585,0.0,wine,gbc,accuracy
+11,od280/od315_of_diluted_wines,0.07914979780548316,0.07116104868913825,wine,gbc,accuracy
+12,proline,0.14153967931499956,0.08863920099875097,wine,gbc,accuracy
+0,alcohol,0.015832968079821153,0.09793425460024638,wine,nn,f1
+1,malic_acid,0.07156087743176198,0.01477236294135971,wine,nn,f1
+2,ash,0.009545857925760516,0.00821114552769124,wine,nn,f1
+3,alcalinity_of_ash,0.025992680011541668,0.06676924320083301,wine,nn,f1
+4,magnesium,0.0882373660739289,0.3042298946074233,wine,nn,f1
+5,total_phenols,0.00889177789770356,0.002103405100373725,wine,nn,f1
+6,flavanoids,0.06016513383110184,0.014448772243311885,wine,nn,f1
+7,nonflavanoid_phenols,0.00496483320954879,0.002103405100373725,wine,nn,f1
+8,proanthocyanins,0.007286174979951304,0.0008834993786645463,wine,nn,f1
+9,color_intensity,0.10084610138423314,0.05561645720958409,wine,nn,f1
+10,hue,0.012513275232984098,0.0033640495831449516,wine,nn,f1
+11,od280/od315_of_diluted_wines,0.029396904669481548,0.012778764832360569,wine,nn,f1
+12,proline,0.5647660492721814,0.4167847456746329,wine,nn,f1
+0,alcohol,0.018683980567442537,0.07912243073987688,wine,logit,f1
+1,malic_acid,0.05795659258012026,0.01576955339201941,wine,logit,f1
+2,ash,0.003958230621068396,0.024706887779929115,wine,logit,f1
+3,alcalinity_of_ash,0.06833397413998833,0.21009332599126837,wine,logit,f1
+4,magnesium,0.046397679806346764,0.1656834553198508,wine,logit,f1
+5,total_phenols,0.018462635362616834,0.0013977119241898694,wine,logit,f1
+6,flavanoids,0.07016576024675181,0.014390072700753915,wine,logit,f1
+7,nonflavanoid_phenols,0.000887626294814583,0.0013977119241898694,wine,logit,f1
+8,proanthocyanins,0.014824079221714697,0.024706887779929115,wine,logit,f1
+9,color_intensity,0.25540239156810207,0.1501561305465439,wine,logit,f1
+10,hue,0.004161266883103421,0.013829971236546204,wine,logit,f1
+11,od280/od315_of_diluted_wines,0.03810309061680864,0.017172596530008282,wine,logit,f1
+12,proline,0.40266269209112165,0.2815732641348943,wine,logit,f1
+0,alcohol,0.1398127599395553,0.29178163178457367,wine,rf,f1
+1,malic_acid,0.021274389032734084,0.01046392791394561,wine,rf,f1
+2,ash,0.011749817977287186,0.01046392791394561,wine,rf,f1
+3,alcalinity_of_ash,0.018121624131747616,0.01046392791394561,wine,rf,f1
+4,magnesium,0.027752412759582436,0.07668351255447628,wine,rf,f1
+5,total_phenols,0.06547210498900823,0.01046392791394561,wine,rf,f1
+6,flavanoids,0.16398644137362411,0.0929196798758486,wine,rf,f1
+7,nonflavanoid_phenols,0.012111342723734948,0.01046392791394561,wine,rf,f1
+8,proanthocyanins,0.021828057304003144,0.01046392791394561,wine,rf,f1
+9,color_intensity,0.1795844116960518,0.21483694632832123,wine,rf,f1
+10,hue,0.05577798896520136,0.01046392791394561,wine,rf,f1
+11,od280/od315_of_diluted_wines,0.11961515611620031,0.07459617943987108,wine,rf,f1
+12,proline,0.16291349299126953,0.17593455461928986,wine,rf,f1
+0,alcohol,0.0014331606064427564,0.0006309294118325253,wine,knn,f1
+1,malic_acid,0.0034824948784569275,0.00554693322162294,wine,knn,f1
+2,ash,0.0002546667252365479,0.03839489607800914,wine,knn,f1
+3,alcalinity_of_ash,0.008328969538461507,0.028275299048589483,wine,knn,f1
+4,magnesium,0.08349883212720051,0.22615087571627715,wine,knn,f1
+5,total_phenols,0.0004891398931595552,0.012846480523042735,wine,knn,f1
+6,flavanoids,0.0009693760652605597,0.012846480523042735,wine,knn,f1
+7,nonflavanoid_phenols,0.00018649281231101526,0.03839489607800914,wine,knn,f1
+8,proanthocyanins,0.0003057922101861265,0.03292023560194472,wine,knn,f1
+9,color_intensity,0.011773641619773446,0.0011699070092469719,wine,knn,f1
+10,hue,0.00018811694153728434,0.03839489607800914,wine,knn,f1
+11,od280/od315_of_diluted_wines,0.0005409570991241602,0.005546933221623516,wine,knn,f1
+12,proline,0.8885483594828496,0.5588812374887498,wine,knn,f1
+0,alcohol,0.013712802905464021,0.0024358678377526272,wine,gbc,f1
+1,malic_acid,0.07052148675018352,0.018759043258126263,wine,gbc,f1
+2,ash,0.003972933331066146,0.0024358678377526272,wine,gbc,f1
+3,alcalinity_of_ash,0.028283933925749367,0.043990201622171037,wine,gbc,f1
+4,magnesium,0.06603769279889839,0.05341744668972715,wine,gbc,f1
+5,total_phenols,0.005958526754281,0.0024358678377526272,wine,gbc,f1
+6,flavanoids,0.24009649854135404,0.23003284178399772,wine,gbc,f1
+7,nonflavanoid_phenols,0.0010974085042190931,0.0024358678377526272,wine,gbc,f1
+8,proanthocyanins,0.0014799287088759466,0.0024358678377526272,wine,gbc,f1
+9,color_intensity,0.3435862268634678,0.49611318388198555,wine,gbc,f1
+10,hue,0.003894671061171917,0.0024358678377526272,wine,gbc,f1
+11,od280/od315_of_diluted_wines,0.07906371421051824,0.05929431737943696,wine,gbc,f1
+12,proline,0.14229417564475041,0.08377775835803959,wine,gbc,f1
+0,alcohol,0.015867479078881783,0.07310607517129956,wine,nn,precision
+1,malic_acid,0.07152902500173594,0.01058541350975487,wine,nn,precision
+2,ash,0.009504409450416888,0.0075047943163424405,wine,nn,precision
+3,alcalinity_of_ash,0.02598200718242403,0.08998209525717339,wine,nn,precision
+4,magnesium,0.08820088454591456,0.26543226396245007,wine,nn,precision
+5,total_phenols,0.008900361596044497,0.006013769510945508,wine,nn,precision
+6,flavanoids,0.060152920063789625,0.010007275287902193,wine,nn,precision
+7,nonflavanoid_phenols,0.004877318707369658,0.006013769510945508,wine,nn,precision
+8,proanthocyanins,0.00724327465002773,0.002429562882422063,wine,nn,precision
+9,color_intensity,0.10077656657653171,0.06162188545656034,wine,nn,precision
+10,hue,0.012603538855856728,0.00044501894380932555,wine,nn,precision
+11,od280/od315_of_diluted_wines,0.029459658223008382,0.009582302242461854,wine,nn,precision
+12,proline,0.5649025560679984,0.4572757739479329,wine,nn,precision
+0,alcohol,0.01866273727167512,0.04889997708069826,wine,logit,precision
+1,malic_acid,0.0577694256911551,0.03626091453786428,wine,logit,precision
+2,ash,0.004059069880702202,0.04366837429175757,wine,logit,precision
+3,alcalinity_of_ash,0.06864954714053366,0.1490203623578351,wine,logit,precision
+4,magnesium,0.04633026035920115,0.10091798480297656,wine,logit,precision
+5,total_phenols,0.018801434407903692,0.006358869675955748,wine,logit,precision
+6,flavanoids,0.06989285990526188,0.027222165988383083,wine,logit,precision
+7,nonflavanoid_phenols,0.0008127084157108882,0.006358869675955748,wine,logit,precision
+8,proanthocyanins,0.015022931329088213,0.04366837429175757,wine,logit,precision
+9,color_intensity,0.2554038257811771,0.14292934921569267,wine,logit,precision
+10,hue,0.004342877238518508,0.022823689305210313,wine,logit,precision
+11,od280/od315_of_diluted_wines,0.0385008865124327,0.030094036735842395,wine,logit,precision
+12,proline,0.4017514360666398,0.3417770320400707,wine,logit,precision
+0,alcohol,0.13984834478796432,0.2799647337385868,wine,rf,precision
+1,malic_acid,0.021271143360041968,0.020760683241439842,wine,rf,precision
+2,ash,0.011711071396732704,0.020760683241439842,wine,rf,precision
+3,alcalinity_of_ash,0.018150369204624324,0.020760683241439842,wine,rf,precision
+4,magnesium,0.027817060897384432,0.06604665361877379,wine,rf,precision
+5,total_phenols,0.06551601585877961,0.020760683241439842,wine,rf,precision
+6,flavanoids,0.16398582461068556,0.10048170688857498,wine,rf,precision
+7,nonflavanoid_phenols,0.012093051778143134,0.020760683241439842,wine,rf,precision
+8,proanthocyanins,0.02183286685595441,0.020760683241439842,wine,rf,precision
+9,color_intensity,0.17959108005956953,0.17060934759702118,wine,rf,precision
+10,hue,0.05579401434663652,0.020760683241439842,wine,rf,precision
+11,od280/od315_of_diluted_wines,0.1195394287099387,0.08276592385587875,wine,rf,precision
+12,proline,0.16284972813354467,0.1548068516110856,wine,rf,precision
+0,alcohol,0.0014410385257777976,0.02432161514345898,wine,knn,precision
+1,malic_acid,0.003443414202353699,0.029926903971516542,wine,knn,precision
+2,ash,0.00025441259086895595,0.05952282898366187,wine,knn,precision
+3,alcalinity_of_ash,0.008373427576604336,0.04933795114502761,wine,knn,precision
+4,magnesium,0.08355784766938744,0.17749524504072803,wine,knn,precision
+5,total_phenols,0.0004072116412401925,0.03650377619643778,wine,knn,precision
+6,flavanoids,0.0009191849573772954,0.03650377619643778,wine,knn,precision
+7,nonflavanoid_phenols,0.00020167413691647652,0.05952282898366187,wine,knn,precision
+8,proanthocyanins,0.0002694032489866698,0.05459017481497094,wine,knn,precision
+9,color_intensity,0.011712415561648917,0.02219647272643486,wine,knn,precision
+10,hue,0.00018793573956508349,0.05952282898366187,wine,knn,precision
+11,od280/od315_of_diluted_wines,0.0005508631305579306,0.029926903971516542,wine,knn,precision
+12,proline,0.8886811710187152,0.3606286938424853,wine,knn,precision
+0,alcohol,0.014130212101541261,0.0059517228124385865,wine,gbc,precision
+1,malic_acid,0.0703834529208817,0.022515223240077382,wine,gbc,precision
+2,ash,0.0037697043698062304,0.0059517228124385865,wine,gbc,precision
+3,alcalinity_of_ash,0.02880446427904504,0.04918223651125446,wine,gbc,precision
+4,magnesium,0.0663558331532383,0.06273465945651822,wine,gbc,precision
+5,total_phenols,0.006071163234131535,0.0059517228124385865,wine,gbc,precision
+6,flavanoids,0.23929346780892746,0.2038281803713569,wine,gbc,precision
+7,nonflavanoid_phenols,0.0012639670227553737,0.0059517228124385865,wine,gbc,precision
+8,proanthocyanins,0.0015512923928693342,0.0059517228124385865,wine,gbc,precision
+9,color_intensity,0.34331890992235964,0.4752434072839533,wine,gbc,precision
+10,hue,0.00396341401283476,0.0059517228124385865,wine,gbc,precision
+11,od280/od315_of_diluted_wines,0.07936820054533457,0.05234365162868443,wine,gbc,precision
+12,proline,0.1417259182362747,0.0984423046335238,wine,gbc,precision
+0,alcohol,0.015903568511612117,0.10854893138357698,wine,nn,recall
+1,malic_acid,0.07153294501608837,0.0191226096737904,wine,nn,recall
+2,ash,0.009681308057129792,0.011248593925759469,wine,nn,recall
+3,alcalinity_of_ash,0.025991371887245544,0.07311586051743509,wine,nn,recall
+4,magnesium,0.08817965694572982,0.2930258717660295,wine,nn,recall
+5,total_phenols,0.008909330575841656,0.0,wine,nn,recall
+6,flavanoids,0.06007649687638125,0.01912260967379085,wine,nn,recall
+7,nonflavanoid_phenols,0.0049535265478818325,0.0,wine,nn,recall
+8,proanthocyanins,0.0074209795652958425,0.0033745781777278633,wine,nn,recall
+9,color_intensity,0.10076946487761879,0.06130483689538824,wine,nn,recall
+10,hue,0.012472229905724221,0.0061867266591676745,wine,nn,recall
+11,od280/od315_of_diluted_wines,0.02955226183242424,0.016872890888638865,wine,nn,recall
+12,proline,0.5645568594010265,0.388076490438695,wine,nn,recall
+0,alcohol,0.018921810718232977,0.08854961832061038,wine,logit,recall
+1,malic_acid,0.05781585141722188,0.0183206106870233,wine,logit,recall
+2,ash,0.004242219893742606,0.027480916030534645,wine,logit,recall
+3,alcalinity_of_ash,0.06853136483594661,0.19465648854961828,wine,logit,recall
+4,magnesium,0.04627147934973382,0.18320610687022873,wine,logit,recall
+5,total_phenols,0.018590489694734865,3.0509945714889755e-16,wine,logit,recall
+6,flavanoids,0.06997542845358853,0.016030534351145386,wine,logit,recall
+7,nonflavanoid_phenols,0.0009625143235100414,3.0509945714889755e-16,wine,logit,recall
+8,proanthocyanins,0.014607474903815145,0.027480916030534645,wine,logit,recall
+9,color_intensity,0.2554403494553723,0.1526717557251901,wine,logit,recall
+10,hue,0.004023980619528896,0.01603053435114508,wine,logit,recall
+11,od280/od315_of_diluted_wines,0.038275185455854295,0.017557251908396923,wine,logit,recall
+12,proline,0.4023418508787181,0.25801526717557194,wine,logit,recall
+0,alcohol,0.13980163334686846,0.3157894736842069,wine,rf,recall
+1,malic_acid,0.021312810054108837,1.0017049846241953e-15,wine,rf,recall
+2,ash,0.011760011722934435,1.0017049846241953e-15,wine,rf,recall
+3,alcalinity_of_ash,0.01805960655118852,1.0017049846241953e-15,wine,rf,recall
+4,magnesium,0.027824187110566164,0.09022556390977397,wine,rf,recall
+5,total_phenols,0.06549519947559264,1.0017049846241953e-15,wine,rf,recall
+6,flavanoids,0.16390075647700345,0.09022556390977497,wine,rf,recall
+7,nonflavanoid_phenols,0.012029472859157495,1.0017049846241953e-15,wine,rf,recall
+8,proanthocyanins,0.0218912653989362,1.0017049846241953e-15,wine,rf,recall
+9,color_intensity,0.1795402827780041,0.2406015037593966,wine,rf,recall
+10,hue,0.05583898852976812,1.0017049846241953e-15,wine,rf,recall
+11,od280/od315_of_diluted_wines,0.1196422743549146,0.07017543859649175,wine,rf,recall
+12,proline,0.16290351134095682,0.1929824561403488,wine,rf,recall
+0,alcohol,0.001431847070638316,0.033737024221453006,wine,knn,recall
+1,malic_acid,0.003398301359650902,0.031141868512110385,wine,knn,recall
+2,ash,0.0002307741209369434,0.0,wine,knn,recall
+3,alcalinity_of_ash,0.00843235588943938,0.014705882352941044,wine,knn,recall
+4,magnesium,0.08356631843218158,0.2551903114186851,wine,knn,recall
+5,total_phenols,0.0002931482021704884,0.024221453287197544,wine,knn,recall
+6,flavanoids,0.0008629261690570549,0.024221453287197544,wine,knn,recall
+7,nonflavanoid_phenols,0.00019623746336857944,0.0,wine,knn,recall
+8,proanthocyanins,0.0003501477402118656,0.005190311418685237,wine,knn,recall
+9,color_intensity,0.011655814768771693,0.03200692041522471,wine,knn,recall
+10,hue,0.00025748579049697095,0.0,wine,knn,recall
+11,od280/od315_of_diluted_wines,0.0007010046558260197,0.03114186851211108,wine,knn,recall
+12,proline,0.8886236383372501,0.5484429065743944,wine,knn,recall
+0,alcohol,0.01426399086018589,0.0,wine,gbc,recall
+1,malic_acid,0.07065410621176613,0.024968789013733752,wine,gbc,recall
+2,ash,0.003865050607500359,0.0,wine,gbc,recall
+3,alcalinity_of_ash,0.0285005089074896,0.044943820224719655,wine,gbc,recall
+4,magnesium,0.06669244934162194,0.0561797752808977,wine,gbc,recall
+5,total_phenols,0.005576514968093985,0.0,wine,gbc,recall
+6,flavanoids,0.23883606985736092,0.24968789013732903,wine,gbc,recall
+7,nonflavanoid_phenols,0.0017506329523169011,0.0,wine,gbc,recall
+8,proanthocyanins,0.0014116572507147577,0.0,wine,gbc,recall
+9,color_intensity,0.34275821886524555,0.4644194756554306,wine,gbc,recall
+10,hue,0.004323354355513065,0.0,wine,gbc,recall
+11,od280/od315_of_diluted_wines,0.07981387029938074,0.07116104868913825,wine,gbc,recall
+12,proline,0.14155357552281028,0.08863920099875097,wine,gbc,recall
+0,mean radius,0.031633716562725574,0.056749687251222265,cancer,nn,accuracy
+1,mean texture,0.00025760738960080477,2.87877686357937e-16,cancer,nn,accuracy
+2,mean perimeter,0.02638713427220563,0.009325599909018418,cancer,nn,accuracy
+3,mean area,0.10088494798577001,0.23495962697600214,cancer,nn,accuracy
+4,mean smoothness,0.0003185118153971729,2.87877686357937e-16,cancer,nn,accuracy
+5,mean compactness,0.0003455814215326499,2.87877686357937e-16,cancer,nn,accuracy
+6,mean concavity,0.0019128777992634724,2.87877686357937e-16,cancer,nn,accuracy
+7,mean concave points,0.00033752295656770047,2.87877686357937e-16,cancer,nn,accuracy
+8,mean symmetry,3.710444208247988e-05,2.87877686357937e-16,cancer,nn,accuracy
+9,mean fractal dimension,0.00022618548826645166,2.87877686357937e-16,cancer,nn,accuracy
+10,radius error,0.0004379370397868765,2.87877686357937e-16,cancer,nn,accuracy
+11,texture error,0.001125934316057393,2.87877686357937e-16,cancer,nn,accuracy
+12,perimeter error,0.0003869478046123699,2.87877686357937e-16,cancer,nn,accuracy
+13,area error,0.06504701926663298,0.0035255316729217306,cancer,nn,accuracy
+14,smoothness error,1.751709190143355e-05,2.87877686357937e-16,cancer,nn,accuracy
+15,compactness error,5.5631087805197015e-05,2.87877686357937e-16,cancer,nn,accuracy
+16,concavity error,0.0002175609524352117,2.87877686357937e-16,cancer,nn,accuracy
+17,concave points error,0.00036922898754543007,2.87877686357937e-16,cancer,nn,accuracy
+18,symmetry error,0.0002612053509074271,2.87877686357937e-16,cancer,nn,accuracy
+19,fractal dimension error,0.0002459107011662521,2.87877686357937e-16,cancer,nn,accuracy
+20,worst radius,0.005221220585330399,0.0013647219379053486,cancer,nn,accuracy
+21,worst texture,0.03366947269945706,0.02411008756965751,cancer,nn,accuracy
+22,worst perimeter,0.11998350354624719,0.2976231092914798,cancer,nn,accuracy
+23,worst area,0.5984255065805738,0.37234163539178644,cancer,nn,accuracy
+24,worst smoothness,2.495916746948973e-05,2.87877686357937e-16,cancer,nn,accuracy
+25,worst compactness,0.004371061440053763,2.87877686357937e-16,cancer,nn,accuracy
+26,worst concavity,0.007193012382313648,2.87877686357937e-16,cancer,nn,accuracy
+27,worst concave points,0.00035958948178216234,2.87877686357937e-16,cancer,nn,accuracy
+28,worst symmetry,0.00013522612068740114,2.87877686357937e-16,cancer,nn,accuracy
+29,worst fractal dimension,0.00011036526382277553,2.87877686357937e-16,cancer,nn,accuracy
+0,mean radius,0.10276649980661125,0.22042026331851075,cancer,logit,accuracy
+1,mean texture,0.013415222688300473,0.008544772865986665,cancer,logit,accuracy
+2,mean perimeter,0.006814303108835947,0.004446769552707389,cancer,logit,accuracy
+3,mean area,0.004205530572807885,8.719155985708337e-05,cancer,logit,accuracy
+4,mean smoothness,0.0008679206580294657,0.0,cancer,logit,accuracy
+5,mean compactness,0.000556632230106218,0.0,cancer,logit,accuracy
+6,mean concavity,0.0018326774429704028,0.0,cancer,logit,accuracy
+7,mean concave points,0.001370786331950849,0.0,cancer,logit,accuracy
+8,mean symmetry,0.0007180855585392812,0.0,cancer,logit,accuracy
+9,mean fractal dimension,0.0012119232098840608,0.0,cancer,logit,accuracy
+10,radius error,0.001049943915159393,0.0,cancer,logit,accuracy
+11,texture error,0.008734694034287997,0.0009591071584270342,cancer,logit,accuracy
+12,perimeter error,0.011695948993312527,0.0027901299154241294,cancer,logit,accuracy
+13,area error,0.09250094211235212,0.021710698404394334,cancer,logit,accuracy
+14,smoothness error,0.0010793891588172155,0.0,cancer,logit,accuracy
+15,compactness error,0.0005012200951794094,0.0,cancer,logit,accuracy
+16,concavity error,0.0008894695104291051,0.0,cancer,logit,accuracy
+17,concave points error,0.0005851829704536662,0.0,cancer,logit,accuracy
+18,symmetry error,0.001424978093637328,0.0,cancer,logit,accuracy
+19,fractal dimension error,0.0014011961328406857,0.0,cancer,logit,accuracy
+20,worst radius,0.13744720764944673,0.25503531258174206,cancer,logit,accuracy
+21,worst texture,0.05785191645050295,0.07167146220245918,cancer,logit,accuracy
+22,worst perimeter,0.2263847606465404,0.23288865637806241,cancer,logit,accuracy
+23,worst area,0.3092876445588613,0.18109686982300102,cancer,logit,accuracy
+24,worst smoothness,0.00154802563861493,0.0,cancer,logit,accuracy
+25,worst compactness,0.003951744028266212,0.00026157467957102937,cancer,logit,accuracy
+26,worst concavity,0.00574396837493064,8.719155985697301e-05,cancer,logit,accuracy
+27,worst concave points,0.0019536893183292043,0.0,cancer,logit,accuracy
+28,worst symmetry,0.0010309670396221717,0.0,cancer,logit,accuracy
+29,worst fractal dimension,0.0011775296703800636,0.0,cancer,logit,accuracy
+0,mean radius,0.018550167517764123,0.04499999999999975,cancer,rf,accuracy
+1,mean texture,0.022948450506079566,0.01999999999999848,cancer,rf,accuracy
+2,mean perimeter,0.04123531385176043,0.0350000000000005,cancer,rf,accuracy
+3,mean area,0.027247935846417555,0.05625000000000008,cancer,rf,accuracy
+4,mean smoothness,0.007500191492894733,0.044999999999998166,cancer,rf,accuracy
+5,mean compactness,0.005977509326606539,0.022499999999999083,cancer,rf,accuracy
+6,mean concavity,0.06261722622966556,0.057499999999998004,cancer,rf,accuracy
+7,mean concave points,0.08863977833086258,0.013750000000000933,cancer,rf,accuracy
+8,mean symmetry,0.004860138356580321,1.5820678100908232e-15,cancer,rf,accuracy
+9,mean fractal dimension,0.002862746228951839,0.05625000000000008,cancer,rf,accuracy
+10,radius error,0.017801741735321182,0.011250000000000333,cancer,rf,accuracy
+11,texture error,0.0015279879206439152,0.003750000000000111,cancer,rf,accuracy
+12,perimeter error,0.013604251354854316,0.026249999999999194,cancer,rf,accuracy
+13,area error,0.04461123349014253,0.018750000000002136,cancer,rf,accuracy
+14,smoothness error,0.001617368762406942,1.5820678100908232e-15,cancer,rf,accuracy
+15,compactness error,0.002174920384279545,1.5820678100908232e-15,cancer,rf,accuracy
+16,concavity error,0.00102047907808232,1.5820678100908232e-15,cancer,rf,accuracy
+17,concave points error,0.0011901447284605434,1.5820678100908232e-15,cancer,rf,accuracy
+18,symmetry error,0.003232572006315543,1.5820678100908232e-15,cancer,rf,accuracy
+19,fractal dimension error,0.0018709093118734707,0.0350000000000005,cancer,rf,accuracy
+20,worst radius,0.10346893993255456,0.06749999999999724,cancer,rf,accuracy
+21,worst texture,0.03508200852773241,0.08000000000000025,cancer,rf,accuracy
+22,worst perimeter,0.16171791273793396,0.07874999999999917,cancer,rf,accuracy
+23,worst area,0.09860223214166297,0.04499999999999975,cancer,rf,accuracy
+24,worst smoothness,0.012920354063584468,1.5820678100908232e-15,cancer,rf,accuracy
+25,worst compactness,0.01860969646014377,1.5820678100908232e-15,cancer,rf,accuracy
+26,worst concavity,0.0668796871452265,0.05999999999999703,cancer,rf,accuracy
+27,worst concave points,0.12093809956834488,0.13124999999999754,cancer,rf,accuracy
+28,worst symmetry,0.005911538917591903,0.056249999999998496,cancer,rf,accuracy
+29,worst fractal dimension,0.00477846404526115,0.0350000000000005,cancer,rf,accuracy
+0,mean radius,0.0,8.76188472185984e-16,cancer,knn,accuracy
+1,mean texture,0.0011402506734561869,0.009691934925578575,cancer,knn,accuracy
+2,mean perimeter,0.0011915647055394639,0.0038075458636204363,cancer,knn,accuracy
+3,mean area,0.20043308389439074,0.27379716164762347,cancer,knn,accuracy
+4,mean smoothness,0.0,8.76188472185984e-16,cancer,knn,accuracy
+5,mean compactness,0.0,8.76188472185984e-16,cancer,knn,accuracy
+6,mean concavity,0.0,8.76188472185984e-16,cancer,knn,accuracy
+7,mean concave points,0.0,8.76188472185984e-16,cancer,knn,accuracy
+8,mean symmetry,0.0,8.76188472185984e-16,cancer,knn,accuracy
+9,mean fractal dimension,4.50149982509807e-05,8.76188472185984e-16,cancer,knn,accuracy
+10,radius error,7.199900201877343e-05,8.76188472185984e-16,cancer,knn,accuracy
+11,texture error,0.0,8.76188472185984e-16,cancer,knn,accuracy
+12,perimeter error,0.0,8.76188472185984e-16,cancer,knn,accuracy
+13,area error,0.01695348865818144,0.012807199723086882,cancer,knn,accuracy
+14,smoothness error,0.0,8.76188472185984e-16,cancer,knn,accuracy
+15,compactness error,0.00010549498564255309,8.76188472185984e-16,cancer,knn,accuracy
+16,concavity error,0.0,8.76188472185984e-16,cancer,knn,accuracy
+17,concave points error,5.664432632470294e-05,8.76188472185984e-16,cancer,knn,accuracy
+18,symmetry error,0.0,8.76188472185984e-16,cancer,knn,accuracy
+19,fractal dimension error,0.0,8.76188472185984e-16,cancer,knn,accuracy
+20,worst radius,0.0,8.76188472185984e-16,cancer,knn,accuracy
+21,worst texture,0.0025158647998446367,0.017653167185877484,cancer,knn,accuracy
+22,worst perimeter,0.0061466682334219746,0.0010384215991697276,cancer,knn,accuracy
+23,worst area,0.7713399257229288,0.6812045690550232,cancer,knn,accuracy
+24,worst smoothness,0.0,8.76188472185984e-16,cancer,knn,accuracy
+25,worst compactness,0.0,8.76188472185984e-16,cancer,knn,accuracy
+26,worst concavity,0.0,8.76188472185984e-16,cancer,knn,accuracy
+27,worst concave points,0.0,8.76188472185984e-16,cancer,knn,accuracy
+28,worst symmetry,0.0,8.76188472185984e-16,cancer,knn,accuracy
+29,worst fractal dimension,0.0,8.76188472185984e-16,cancer,knn,accuracy
+0,mean radius,0.0008259494975888783,0.04854368932038714,cancer,gbc,accuracy
+1,mean texture,0.032386165782748486,0.08090614886731236,cancer,gbc,accuracy
+2,mean perimeter,0.00536073423208502,0.08737864077669905,cancer,gbc,accuracy
+3,mean area,0.007987871194734559,0.009708737864077974,cancer,gbc,accuracy
+4,mean smoothness,0.010183228059401528,0.04854368932038714,cancer,gbc,accuracy
+5,mean compactness,0.005569163003749819,0.010787486515641738,cancer,gbc,accuracy
+6,mean concavity,0.0017914519060540726,0.006472491909386682,cancer,gbc,accuracy
+7,mean concave points,0.10972218689450487,0.04854368932038851,cancer,gbc,accuracy
+8,mean symmetry,0.0033019701525796035,0.04854368932038851,cancer,gbc,accuracy
+9,mean fractal dimension,0.0010902637878227317,1.3653228134548662e-15,cancer,gbc,accuracy
+10,radius error,0.0032083999310368472,0.03667745415318164,cancer,gbc,accuracy
+11,texture error,0.001443174464198924,0.03883495145630917,cancer,gbc,accuracy
+12,perimeter error,0.017736841533867936,0.03128371089536145,cancer,gbc,accuracy
+13,area error,0.08445930353252742,0.07011866235166926,cancer,gbc,accuracy
+14,smoothness error,0.0031121949627114,0.012944983818770633,cancer,gbc,accuracy
+15,compactness error,0.002246650197687683,0.03883495145630917,cancer,gbc,accuracy
+16,concavity error,0.0012276222169530905,1.3653228134548662e-15,cancer,gbc,accuracy
+17,concave points error,0.0008128685241278677,1.3653228134548662e-15,cancer,gbc,accuracy
+18,symmetry error,0.0011155455900046104,1.3653228134548662e-15,cancer,gbc,accuracy
+19,fractal dimension error,0.002053196147306893,1.3653228134548662e-15,cancer,gbc,accuracy
+20,worst radius,0.050698009107962794,0.03883495145631053,cancer,gbc,accuracy
+21,worst texture,0.057964328157828454,0.09816612729234352,cancer,gbc,accuracy
+22,worst perimeter,0.046269765722491495,0.07766990291262106,cancer,gbc,accuracy
+23,worst area,0.30646251971338023,0.026968716289106395,cancer,gbc,accuracy
+24,worst smoothness,0.010027433500990387,0.018338727076592187,cancer,gbc,accuracy
+25,worst compactness,0.0027237279568112227,0.03883495145630917,cancer,gbc,accuracy
+26,worst concavity,0.07159798343805034,0.02265372168284588,cancer,gbc,accuracy
+27,worst concave points,0.15567471378247597,0.060409924487591284,cancer,gbc,accuracy
+28,worst symmetry,0.0015679920456521358,1.3653228134548662e-15,cancer,gbc,accuracy
+29,worst fractal dimension,0.0013787449626648486,1.3653228134548662e-15,cancer,gbc,accuracy
+0,mean radius,0.03126672288469264,0.04932828600704676,cancer,nn,f1
+1,mean texture,0.00026820249656501544,2.4300549745983155e-16,cancer,nn,f1
+2,mean perimeter,0.027087712667940467,0.00774884130526678,cancer,nn,f1
+3,mean area,0.09969207640661731,0.22460861694558143,cancer,nn,f1
+4,mean smoothness,2.791792623369849e-05,2.4300549745983155e-16,cancer,nn,f1
+5,mean compactness,0.0003055475037510475,2.4300549745983155e-16,cancer,nn,f1
+6,mean concavity,0.0015102201471619003,2.4300549745983155e-16,cancer,nn,f1
+7,mean concave points,0.0002966172377179079,2.4300549745983155e-16,cancer,nn,f1
+8,mean symmetry,1.4181166420376471e-05,2.4300549745983155e-16,cancer,nn,f1
+9,mean fractal dimension,0.0,2.4300549745983155e-16,cancer,nn,f1
+10,radius error,0.00043018908477909237,2.4300549745983155e-16,cancer,nn,f1
+11,texture error,0.0008859385814294605,2.4300549745983155e-16,cancer,nn,f1
+12,perimeter error,7.510843925624914e-05,2.4300549745983155e-16,cancer,nn,f1
+13,area error,0.06487075609170473,0.0029392808673201756,cancer,nn,f1
+14,smoothness error,0.0004081028096820253,2.4300549745983155e-16,cancer,nn,f1
+15,compactness error,0.0004369802216180052,2.4300549745983155e-16,cancer,nn,f1
+16,concavity error,0.00039521310563727546,2.4300549745983155e-16,cancer,nn,f1
+17,concave points error,0.00014333110910471548,2.4300549745983155e-16,cancer,nn,f1
+18,symmetry error,0.0002300849984073126,2.4300549745983155e-16,cancer,nn,f1
+19,fractal dimension error,7.651342987226287e-05,2.4300549745983155e-16,cancer,nn,f1
+20,worst radius,0.0043769747096867595,0.0011389085370739334,cancer,nn,f1
+21,worst texture,0.03368181460507041,0.020320307608220487,cancer,nn,f1
+22,worst perimeter,0.12031022855462147,0.3052773563860114,cancer,nn,f1
+23,worst area,0.6023388769270228,0.3886384023434737,cancer,nn,f1
+24,worst smoothness,0.00026759120490688597,2.4300549745983155e-16,cancer,nn,f1
+25,worst compactness,0.003487885766925274,2.4300549745983155e-16,cancer,nn,f1
+26,worst concavity,0.006554640163309215,2.4300549745983155e-16,cancer,nn,f1
+27,worst concave points,0.00025662605318022144,2.4300549745983155e-16,cancer,nn,f1
+28,worst symmetry,2.6287613641571195e-05,2.4300549745983155e-16,cancer,nn,f1
+29,worst fractal dimension,0.0002776580930438038,2.4300549745983155e-16,cancer,nn,f1
+0,mean radius,0.10386921309226571,0.22227348367015184,cancer,logit,f1
+1,mean texture,0.0147422432765715,0.006870247557558016,cancer,logit,f1
+2,mean perimeter,0.005612942630218412,0.0034428884685061825,cancer,logit,f1
+3,mean area,0.003306744319546075,0.0002074585623546353,cancer,logit,f1
+4,mean smoothness,0.001008080885077016,0.00029202631381323687,cancer,logit,f1
+5,mean compactness,0.0014324959992542614,0.00029202631381323687,cancer,logit,f1
+6,mean concavity,0.0006716609031788569,0.00029202631381323687,cancer,logit,f1
+7,mean concave points,0.000935634501437384,0.00029202631381323687,cancer,logit,f1
+8,mean symmetry,0.0006853588035138636,0.00029202631381323687,cancer,logit,f1
+9,mean fractal dimension,0.0010496693517753853,0.00029202631381323687,cancer,logit,f1
+10,radius error,0.0011588221914851128,0.00029202631381323687,cancer,logit,f1
+11,texture error,0.008563681038484372,0.0005121121235560056,cancer,logit,f1
+12,perimeter error,0.01188308450144242,0.00203616710827641,cancer,logit,f1
+13,area error,0.092789086434629,0.0179553713135954,cancer,logit,f1
+14,smoothness error,0.0007678017112955126,0.00029202631381323687,cancer,logit,f1
+15,compactness error,0.001156593330173145,0.00029202631381323687,cancer,logit,f1
+16,concavity error,0.0008546731800732434,0.00029202631381323687,cancer,logit,f1
+17,concave points error,0.0007853530862996994,0.00029202631381323687,cancer,logit,f1
+18,symmetry error,0.0019684154824038073,0.00029202631381323687,cancer,logit,f1
+19,fractal dimension error,0.00039342184874055383,0.00029202631381323687,cancer,logit,f1
+20,worst radius,0.13927015004343402,0.26353933924462275,cancer,logit,f1
+21,worst texture,0.0582084075676326,0.062075110348645185,cancer,logit,f1
+22,worst perimeter,0.2267650244212296,0.23791105858834308,cancer,logit,f1
+23,worst area,0.3077993478769354,0.17793110102330617,cancer,logit,f1
+24,worst smoothness,0.0012085268835354257,0.00029202631381323687,cancer,logit,f1
+25,worst compactness,0.0042446900712546105,7.034635520155885e-05,cancer,logit,f1
+26,worst concavity,0.0059527669225691165,0.0002108683010577476,cancer,logit,f1
+27,worst concave points,0.0008060216719753234,0.00029202631381323687,cancer,logit,f1
+28,worst symmetry,0.0009982226979735945,0.00029202631381323687,cancer,logit,f1
+29,worst fractal dimension,0.0011118652755948777,0.00029202631381323687,cancer,logit,f1
+0,mean radius,0.018511829984973215,0.042525375398244386,cancer,rf,f1
+1,mean texture,0.022809120792882352,0.0219390111629379,cancer,rf,f1
+2,mean perimeter,0.041216930964571505,0.031999880502623944,cancer,rf,f1
+3,mean area,0.02700839151121992,0.05387018905434315,cancer,rf,f1
+4,mean smoothness,0.007598047201941024,0.04774956225475097,cancer,rf,f1
+5,mean compactness,0.006267136719485308,0.025301720740449226,cancer,rf,f1
+6,mean concavity,0.062093467036630656,0.06024998242005453,cancer,rf,f1
+7,mean concave points,0.08853158990902678,0.010695191211296456,cancer,rf,f1
+8,mean symmetry,0.004759908212791744,0.0023401809654438896,cancer,rf,f1
+9,mean fractal dimension,0.002907171535591916,0.05387018905434315,cancer,rf,f1
+10,radius error,0.018002149219865426,0.008890477521609099,cancer,rf,f1
+11,texture error,0.0017878055442607373,0.0009277253258849109,cancer,rf,f1
+12,perimeter error,0.01379900944628539,0.02383139358004107,cancer,rf,f1
+13,area error,0.04466973353339835,0.016331476032112515,cancer,rf,f1
+14,smoothness error,0.0018163800132784175,0.002853879226149069,cancer,rf,f1
+15,compactness error,0.0022801917325514713,0.002853879226149069,cancer,rf,f1
+16,concavity error,0.001175521276875026,0.002853879226149069,cancer,rf,f1
+17,concave points error,0.00130234101812807,0.002853879226149069,cancer,rf,f1
+18,symmetry error,0.003019689637703087,0.002853879226149069,cancer,rf,f1
+19,fractal dimension error,0.0018948264961724394,0.032441096592824674,cancer,rf,f1
+20,worst radius,0.10303548647136167,0.06681497588455103,cancer,rf,f1
+21,worst texture,0.03476632774594326,0.07794952680324323,cancer,rf,f1
+22,worst perimeter,0.1614409332006642,0.0775822748537138,cancer,rf,f1
+23,worst area,0.09895454831307757,0.04323610263985797,cancer,rf,f1
+24,worst smoothness,0.01323844222095821,0.002853879226149069,cancer,rf,f1
+25,worst compactness,0.018482680372509736,0.002853879226149069,cancer,rf,f1
+26,worst concavity,0.06665388653502306,0.06252824443916151,cancer,rf,f1
+27,worst concave points,0.12158317967560157,0.1275336893747418,cancer,rf,f1
+28,worst symmetry,0.005371249093761138,0.05897348301190264,cancer,rf,f1
+29,worst fractal dimension,0.005022024583466887,0.032441096592824674,cancer,rf,f1
+0,mean radius,0.0,0.0006578934725492027,cancer,knn,f1
+1,mean texture,0.0011407274737538801,0.00818419479850357,cancer,knn,f1
+2,mean perimeter,0.001191653746847826,0.0027376592126414235,cancer,knn,f1
+3,mean area,0.20097073935240817,0.24856012186223617,cancer,knn,f1
+4,mean smoothness,0.0,0.0006578934725492027,cancer,knn,f1
+5,mean compactness,0.0,0.0006578934725492027,cancer,knn,f1
+6,mean concavity,3.616415387803832e-05,0.0006578934725492027,cancer,knn,f1
+7,mean concave points,0.0,0.0006578934725492027,cancer,knn,f1
+8,mean symmetry,4.464559808883651e-05,0.0006578934725492027,cancer,knn,f1
+9,mean fractal dimension,0.0,0.0006578934725492027,cancer,knn,f1
+10,radius error,0.0,0.0006578934725492027,cancer,knn,f1
+11,texture error,0.0,0.0006578934725492027,cancer,knn,f1
+12,perimeter error,0.0,0.0006578934725492027,cancer,knn,f1
+13,area error,0.01688535182374372,0.011994790246415572,cancer,knn,f1
+14,smoothness error,0.0,0.0006578934725492027,cancer,knn,f1
+15,compactness error,0.0,0.0006578934725492027,cancer,knn,f1
+16,concavity error,0.0,0.0006578934725492027,cancer,knn,f1
+17,concave points error,5.5992392054524033e-05,0.0006578934725492027,cancer,knn,f1
+18,symmetry error,0.0,0.0006578934725492027,cancer,knn,f1
+19,fractal dimension error,0.0,0.0006578934725492027,cancer,knn,f1
+20,worst radius,0.0,0.0006578934725492027,cancer,knn,f1
+21,worst texture,0.0024879097006354997,0.015340804849260252,cancer,knn,f1
+22,worst perimeter,0.0064961195496980656,0.0016252114486863878,cancer,knn,f1
+23,worst area,0.7706906962088913,0.6964256677136249,cancer,knn,f1
+24,worst smoothness,0.0,0.0006578934725492027,cancer,knn,f1
+25,worst compactness,0.0,0.0006578934725492027,cancer,knn,f1
+26,worst concavity,0.0,0.0006578934725492027,cancer,knn,f1
+27,worst concave points,0.0,0.0006578934725492027,cancer,knn,f1
+28,worst symmetry,0.0,0.0006578934725492027,cancer,knn,f1
+29,worst fractal dimension,0.0,0.0006578934725492027,cancer,knn,f1
+0,mean radius,0.0011419957584925058,0.04867916041542075,cancer,gbc,f1
+1,mean texture,0.031026392521050487,0.08133730842682049,cancer,gbc,f1
+2,mean perimeter,0.004073465391852422,0.0876224887477598,cancer,gbc,f1
+3,mean area,0.007783584560199414,0.009178684915022503,cancer,gbc,f1
+4,mean smoothness,0.010962181711948148,0.04867916041542075,cancer,gbc,f1
+5,mean compactness,0.006127984192767601,0.010688039212967326,cancer,gbc,f1
+6,mean concavity,0.0023821919422008803,0.006412823527781758,cancer,gbc,f1
+7,mean concave points,0.11060302918625854,0.048159734968368034,cancer,gbc,f1
+8,mean symmetry,0.0022859011967194583,0.048865826724257,cancer,gbc,f1
+9,mean fractal dimension,0.0013351804724500691,1.3629842250378797e-15,cancer,gbc,f1
+10,radius error,0.002183624305043925,0.03671823807037918,cancer,gbc,f1
+11,texture error,0.0015833006363554377,0.03894332833233769,cancer,gbc,f1
+12,perimeter error,0.01868012525338042,0.031569927081643696,cancer,gbc,f1
+13,area error,0.08466056575009659,0.07017843123387497,cancer,gbc,f1
+14,smoothness error,0.0030231403108954224,0.012650315769219437,cancer,gbc,f1
+15,compactness error,0.0021035685073718365,0.03894332833233769,cancer,gbc,f1
+16,concavity error,0.0009733380959154141,1.3629842250378797e-15,cancer,gbc,f1
+17,concave points error,0.0008606143360946943,1.3629842250378797e-15,cancer,gbc,f1
+18,symmetry error,0.0011438679638010292,1.3629842250378797e-15,cancer,gbc,f1
+19,fractal dimension error,0.0014233360273588906,1.3629842250378797e-15,cancer,gbc,f1
+20,worst radius,0.04832586938369566,0.03997760820443936,cancer,gbc,f1
+21,worst texture,0.05790661194152698,0.09800918443503853,cancer,gbc,f1
+22,worst perimeter,0.047256616779203044,0.07710929845380368,cancer,gbc,f1
+23,worst area,0.30618054493140645,0.026521707703171075,cancer,gbc,f1
+24,worst smoothness,0.01016354613751271,0.018884573663914918,cancer,gbc,f1
+25,worst compactness,0.003868946909377938,0.03894332833233769,cancer,gbc,f1
+26,worst concavity,0.07250477612748579,0.022398828851134183,cancer,gbc,f1
+27,worst concave points,0.15640858739202185,0.059528674182539945,cancer,gbc,f1
+28,worst symmetry,0.001513496062524412,1.3629842250378797e-15,cancer,gbc,f1
+29,worst fractal dimension,0.0015136162149920437,1.3629842250378797e-15,cancer,gbc,f1
+0,mean radius,0.03200446553644592,0.040766499116886144,cancer,nn,precision
+1,mean texture,0.0002562395758452021,3.538270327296485e-16,cancer,nn,precision
+2,mean perimeter,0.028279433798043135,0.010231283233723451,cancer,nn,precision
+3,mean area,0.09957527328136555,0.14156277200625342,cancer,nn,precision
+4,mean smoothness,0.000344816032427655,3.538270327296485e-16,cancer,nn,precision
+5,mean compactness,0.0003899633359349051,3.538270327296485e-16,cancer,nn,precision
+6,mean concavity,0.0015046540698488602,3.538270327296485e-16,cancer,nn,precision
+7,mean concave points,0.0002969968091002697,3.538270327296485e-16,cancer,nn,precision
+8,mean symmetry,0.0002854286976758773,3.538270327296485e-16,cancer,nn,precision
+9,mean fractal dimension,0.00012780398516050912,3.538270327296485e-16,cancer,nn,precision
+10,radius error,0.00041444022226978105,3.538270327296485e-16,cancer,nn,precision
+11,texture error,0.0011460647588258598,3.538270327296485e-16,cancer,nn,precision
+12,perimeter error,0.0005766796336058137,3.538270327296485e-16,cancer,nn,precision
+13,area error,0.06486903894257945,0.004111291652065293,cancer,nn,precision
+14,smoothness error,9.636544103855667e-05,3.538270327296485e-16,cancer,nn,precision
+15,compactness error,0.0002975825143008542,3.538270327296485e-16,cancer,nn,precision
+16,concavity error,0.00034501492777254763,3.538270327296485e-16,cancer,nn,precision
+17,concave points error,7.621386605596418e-05,3.538270327296485e-16,cancer,nn,precision
+18,symmetry error,0.0001403556010469969,3.538270327296485e-16,cancer,nn,precision
+19,fractal dimension error,0.00018574828347389072,3.538270327296485e-16,cancer,nn,precision
+20,worst radius,0.0049758331594834965,0.0015836207040617176,cancer,nn,precision
+21,worst texture,0.033382171798853576,0.02133409982976719,cancer,nn,precision
+22,worst perimeter,0.11970777078627436,0.3088122405249022,cancer,nn,precision
+23,worst area,0.5983432104264647,0.47159819293233285,cancer,nn,precision
+24,worst smoothness,0.000224886214045227,3.538270327296485e-16,cancer,nn,precision
+25,worst compactness,0.004498790324834419,3.538270327296485e-16,cancer,nn,precision
+26,worst concavity,0.006524415051721629,3.538270327296485e-16,cancer,nn,precision
+27,worst concave points,0.0005988625602092942,3.538270327296485e-16,cancer,nn,precision
+28,worst symmetry,0.00028986951608176716,3.538270327296485e-16,cancer,nn,precision
+29,worst fractal dimension,0.00024161084921382763,3.538270327296485e-16,cancer,nn,precision
+0,mean radius,0.10419213296667675,0.2254681662717827,cancer,logit,precision
+1,mean texture,0.015030618127703703,0.008461511102663724,cancer,logit,precision
+2,mean perimeter,0.006047039156971739,0.004619488604229988,cancer,logit,precision
+3,mean area,0.0032278365823415777,0.0005954593653348003,cancer,logit,precision
+4,mean smoothness,0.0011806580654373522,0.0009232109954945223,cancer,logit,precision
+5,mean compactness,0.0011922801400400089,0.0009232109954945223,cancer,logit,precision
+6,mean concavity,0.0008231738272640668,0.0009232109954945223,cancer,logit,precision
+7,mean concave points,0.0006942827352701908,0.0009232109954945223,cancer,logit,precision
+8,mean symmetry,0.0012374143896907452,0.0009232109954945223,cancer,logit,precision
+9,mean fractal dimension,0.0009031848433359019,0.0009232109954945223,cancer,logit,precision
+10,radius error,0.0012691723209894124,0.0009232109954945223,cancer,logit,precision
+11,texture error,0.008326219093236907,0.00036815911936252655,cancer,logit,precision
+12,perimeter error,0.012014779186087505,0.002746237860458489,cancer,logit,precision
+13,area error,0.09236733722462466,0.02135011299921242,cancer,logit,precision
+14,smoothness error,0.000896012365856674,0.0009232109954945223,cancer,logit,precision
+15,compactness error,0.0006147689075994204,0.0009232109954945223,cancer,logit,precision
+16,concavity error,0.0005677682492227413,0.0009232109954945223,cancer,logit,precision
+17,concave points error,0.0013341099143769893,0.0009232109954945223,cancer,logit,precision
+18,symmetry error,0.0009971180223597544,0.0009232109954945223,cancer,logit,precision
+19,fractal dimension error,0.0009237629228167303,0.0009232109954945223,cancer,logit,precision
+20,worst radius,0.1401225596608401,0.29055590805821424,cancer,logit,precision
+21,worst texture,0.0588117848710373,0.05833092981922584,cancer,logit,precision
+22,worst perimeter,0.22589358885513067,0.23333279872826831,cancer,logit,precision
+23,worst area,0.3085766599511888,0.13736910746375852,cancer,logit,precision
+24,worst smoothness,0.001074577087841628,0.0009232109954945223,cancer,logit,precision
+25,worst compactness,0.003075112294603693,0.00047767854602322207,cancer,logit,precision
+26,worst concavity,0.006549954533939314,0.0006298551380583667,cancer,logit,precision
+27,worst concave points,0.00048654233586682027,0.0009232109954945223,cancer,logit,precision
+28,worst symmetry,0.0006855399387662506,0.0009232109954945223,cancer,logit,precision
+29,worst fractal dimension,0.0008840114288826178,0.0009232109954945223,cancer,logit,precision
+0,mean radius,0.01835013249105224,0.04538704172909313,cancer,rf,precision
+1,mean texture,0.02263665116844412,0.02362479369711523,cancer,rf,precision
+2,mean perimeter,0.04155372217371663,0.02788927756529319,cancer,rf,precision
+3,mean area,0.027265363111963092,0.05823938987303463,cancer,rf,precision
+4,mean smoothness,0.007402812490448107,0.051383465871491764,cancer,rf,precision
+5,mean compactness,0.005906630003346194,0.02870290835908061,cancer,rf,precision
+6,mean concavity,0.062254003891393773,0.06450471756155668,cancer,rf,precision
+7,mean concave points,0.08883009909432814,0.004193775959904836,cancer,rf,precision
+8,mean symmetry,0.004730279262665028,0.001573764903290323,cancer,rf,precision
+9,mean fractal dimension,0.0027637352230946467,0.05823938987303463,cancer,rf,precision
+10,radius error,0.017596438463064117,0.010290008586566356,cancer,rf,precision
+11,texture error,0.0015007678808279642,0.0017382347986866832,cancer,rf,precision
+12,perimeter error,0.01383191580421124,0.025820038965600877,cancer,rf,precision
+13,area error,0.04484276469968736,0.01659317888883167,cancer,rf,precision
+14,smoothness error,0.0018507461787100508,0.006022350846667752,cancer,rf,precision
+15,compactness error,0.002210577675597491,0.006022350846667752,cancer,rf,precision
+16,concavity error,0.001144026174468829,0.006022350846667752,cancer,rf,precision
+17,concave points error,0.0012276696245470725,0.006022350846667752,cancer,rf,precision
+18,symmetry error,0.002980912717147127,0.006022350846667752,cancer,rf,precision
+19,fractal dimension error,0.0017486441780084102,0.03396273226781142,cancer,rf,precision
+20,worst radius,0.10326362120475956,0.05398274172311285,cancer,rf,precision
+21,worst texture,0.03488093241571592,0.08434235316691467,cancer,rf,precision
+22,worst perimeter,0.16162869829830345,0.050511923888563355,cancer,rf,precision
+23,worst area,0.09875714657332947,0.04107622875596464,cancer,rf,precision
+24,worst smoothness,0.013388132041061653,0.006022350846667752,cancer,rf,precision
+25,worst compactness,0.01864888117474997,0.006022350846667752,cancer,rf,precision
+26,worst concavity,0.06702452745680106,0.0669423164718647,cancer,rf,precision
+27,worst concave points,0.12150479315206449,0.11215878427100301,cancer,rf,precision
+28,worst symmetry,0.005630905190306368,0.06272374462769904,cancer,rf,precision
+29,worst fractal dimension,0.004644470186186224,0.03396273226781142,cancer,rf,precision
+0,mean radius,0.0,0.002465776541247175,cancer,knn,precision
+1,mean texture,0.001265001217331536,0.014592527988663185,cancer,knn,precision
+2,mean perimeter,0.0012062237404263441,0.0035139873808116904,cancer,knn,precision
+3,mean area,0.20057128773929267,0.2774516102445451,cancer,knn,precision
+4,mean smoothness,0.0,0.002465776541247175,cancer,knn,precision
+5,mean compactness,0.0,0.002465776541247175,cancer,knn,precision
+6,mean concavity,0.0,0.002465776541247175,cancer,knn,precision
+7,mean concave points,0.0,0.002465776541247175,cancer,knn,precision
+8,mean symmetry,0.0,0.002465776541247175,cancer,knn,precision
+9,mean fractal dimension,2.7442945350550515e-05,0.002465776541247175,cancer,knn,precision
+10,radius error,0.0,0.002465776541247175,cancer,knn,precision
+11,texture error,0.0,0.002465776541247175,cancer,knn,precision
+12,perimeter error,0.0,0.002465776541247175,cancer,knn,precision
+13,area error,0.01697352189292809,0.023013807990269534,cancer,knn,precision
+14,smoothness error,0.0,0.002465776541247175,cancer,knn,precision
+15,compactness error,0.0,0.002465776541247175,cancer,knn,precision
+16,concavity error,0.0,0.002465776541247175,cancer,knn,precision
+17,concave points error,0.0,0.002465776541247175,cancer,knn,precision
+18,symmetry error,0.0,0.002465776541247175,cancer,knn,precision
+19,fractal dimension error,7.075964785464102e-05,0.002465776541247175,cancer,knn,precision
+20,worst radius,0.0,0.002465776541247175,cancer,knn,precision
+21,worst texture,0.0029320568619066903,0.027620552813004545,cancer,knn,precision
+22,worst perimeter,0.0063463764515362545,0.0077548700233745094,cancer,knn,precision
+23,worst area,0.7705313753190343,0.5893397831106464,cancer,knn,precision
+24,worst smoothness,7.595418433894848e-05,0.002465776541247175,cancer,knn,precision
+25,worst compactness,0.0,0.002465776541247175,cancer,knn,precision
+26,worst concavity,0.0,0.002465776541247175,cancer,knn,precision
+27,worst concave points,0.0,0.002465776541247175,cancer,knn,precision
+28,worst symmetry,0.0,0.002465776541247175,cancer,knn,precision
+29,worst fractal dimension,0.0,0.002465776541247175,cancer,knn,precision
+0,mean radius,0.0006059299620839655,0.05268905224946194,cancer,gbc,precision
+1,mean texture,0.030818565966069095,0.08068719367803555,cancer,gbc,precision
+2,mean perimeter,0.004103175699242905,0.09484029404903294,cancer,gbc,precision
+3,mean area,0.007169475859737755,0.006170497937678581,cancer,gbc,precision
+4,mean smoothness,0.011246540911126377,0.05268905224946194,cancer,gbc,precision
+5,mean compactness,0.0052235256463294515,0.011038993726723388,cancer,gbc,precision
+6,mean concavity,0.002899548603824565,0.006623396236033456,cancer,gbc,precision
+7,mean concave points,0.11139326221353472,0.046318754344850034,cancer,gbc,precision
+8,mean symmetry,0.002627699890893823,0.05129526195439937,cancer,gbc,precision
+9,mean fractal dimension,0.0014967588073043485,1.443635622870385e-15,cancer,gbc,precision
+10,radius error,0.002172580124064494,0.03968055277864862,cancer,gbc,precision
+11,texture error,0.0014660572666017303,0.042151241799568105,cancer,gbc,precision
+12,perimeter error,0.018247578951089263,0.036857975891480724,cancer,gbc,precision
+13,area error,0.08568319084851107,0.07816738748006909,cancer,gbc,precision
+14,smoothness error,0.002966980210793567,0.011376282231290244,cancer,gbc,precision
+15,compactness error,0.002707676917457531,0.042151241799571,cancer,gbc,precision
+16,concavity error,0.0008504007336707816,1.443635622870385e-15,cancer,gbc,precision
+17,concave points error,0.0006177789496685994,1.443635622870385e-15,cancer,gbc,precision
+18,symmetry error,0.0007893250091430384,1.443635622870385e-15,cancer,gbc,precision
+19,fractal dimension error,0.000410899190096279,1.443635622870385e-15,cancer,gbc,precision
+20,worst radius,0.04909059642345903,0.036386485548656075,cancer,gbc,precision
+21,worst texture,0.05880664445334824,0.1016488050173393,cancer,gbc,precision
+22,worst perimeter,0.04687771876481805,0.07279092370618499,cancer,gbc,precision
+23,worst area,0.30464101080040945,0.009547863937199681,cancer,gbc,precision
+24,worst smoothness,0.010601257056359318,0.01802048178228854,cancer,gbc,precision
+25,worst compactness,0.003233194339775584,0.042151241799571,cancer,gbc,precision
+26,worst concavity,0.07305662571267438,0.025606520600112682,cancer,gbc,precision
+27,worst concave points,0.1569687657672684,0.041110499202332666,cancer,gbc,precision
+28,worst symmetry,0.001837787778368785,1.443635622870385e-15,cancer,gbc,precision
+29,worst fractal dimension,0.0013894471422753979,1.443635622870385e-15,cancer,gbc,precision
+0,mean radius,0.03177882230121659,0.056749687251222265,cancer,nn,recall
+1,mean texture,0.0003437443123106497,2.87877686357937e-16,cancer,nn,recall
+2,mean perimeter,0.02725397287228585,0.009325599909018418,cancer,nn,recall
+3,mean area,0.10014457726719181,0.23495962697600214,cancer,nn,recall
+4,mean smoothness,0.0004018481077673909,2.87877686357937e-16,cancer,nn,recall
+5,mean compactness,0.000308930179278179,2.87877686357937e-16,cancer,nn,recall
+6,mean concavity,0.001037604593813813,2.87877686357937e-16,cancer,nn,recall
+7,mean concave points,0.00048166261253378644,2.87877686357937e-16,cancer,nn,recall
+8,mean symmetry,0.00028190195481369153,2.87877686357937e-16,cancer,nn,recall
+9,mean fractal dimension,0.0001847964432645296,2.87877686357937e-16,cancer,nn,recall
+10,radius error,0.00043019960220242896,2.87877686357937e-16,cancer,nn,recall
+11,texture error,0.0012671064991636458,2.87877686357937e-16,cancer,nn,recall
+12,perimeter error,0.000768400264158266,2.87877686357937e-16,cancer,nn,recall
+13,area error,0.06486594792400165,0.0035255316729217306,cancer,nn,recall
+14,smoothness error,0.00013936113038487283,2.87877686357937e-16,cancer,nn,recall
+15,compactness error,0.00024082910188232112,2.87877686357937e-16,cancer,nn,recall
+16,concavity error,0.00045830482421575845,2.87877686357937e-16,cancer,nn,recall
+17,concave points error,0.0,2.87877686357937e-16,cancer,nn,recall
+18,symmetry error,0.00019634021573388378,2.87877686357937e-16,cancer,nn,recall
+19,fractal dimension error,2.9866473969087616e-05,2.87877686357937e-16,cancer,nn,recall
+20,worst radius,0.00491396590029414,0.0013647219379053486,cancer,nn,recall
+21,worst texture,0.03326051590817866,0.02411008756965751,cancer,nn,recall
+22,worst perimeter,0.11994344708256638,0.2976231092914798,cancer,nn,recall
+23,worst area,0.5981663849581308,0.37234163539178644,cancer,nn,recall
+24,worst smoothness,0.0003304469490179514,2.87877686357937e-16,cancer,nn,recall
+25,worst compactness,0.004309708840917288,2.87877686357937e-16,cancer,nn,recall
+26,worst concavity,0.007243172088802112,2.87877686357937e-16,cancer,nn,recall
+27,worst concave points,0.0008265943620804916,2.87877686357937e-16,cancer,nn,recall
+28,worst symmetry,4.3492424926090086e-05,2.87877686357937e-16,cancer,nn,recall
+29,worst fractal dimension,0.00034805480489774116,2.87877686357937e-16,cancer,nn,recall
+0,mean radius,0.10448666750598613,0.22042026331851075,cancer,logit,recall
+1,mean texture,0.014901645251405929,0.008544772865986665,cancer,logit,recall
+2,mean perimeter,0.005126353125855469,0.004446769552707389,cancer,logit,recall
+3,mean area,0.0019083043013346404,8.719155985708337e-05,cancer,logit,recall
+4,mean smoothness,0.0011832761132846,0.0,cancer,logit,recall
+5,mean compactness,0.0008153000031457336,0.0,cancer,logit,recall
+6,mean concavity,0.0008335500986118686,0.0,cancer,logit,recall
+7,mean concave points,0.0016616631985867244,0.0,cancer,logit,recall
+8,mean symmetry,0.0008691360817794657,0.0,cancer,logit,recall
+9,mean fractal dimension,0.0007058035390909189,0.0,cancer,logit,recall
+10,radius error,0.0018685262243386298,0.0,cancer,logit,recall
+11,texture error,0.009199965566536622,0.0009591071584270342,cancer,logit,recall
+12,perimeter error,0.0131111591938584,0.0027901299154241294,cancer,logit,recall
+13,area error,0.0932795136785491,0.021710698404394334,cancer,logit,recall
+14,smoothness error,0.0008150829374649108,0.0,cancer,logit,recall
+15,compactness error,0.0009211690950106462,0.0,cancer,logit,recall
+16,concavity error,0.0013477383660465971,0.0,cancer,logit,recall
+17,concave points error,0.0010081779614448455,0.0,cancer,logit,recall
+18,symmetry error,0.0007022385555242895,0.0,cancer,logit,recall
+19,fractal dimension error,0.0008218903916969425,0.0,cancer,logit,recall
+20,worst radius,0.13891530351017747,0.25503531258174206,cancer,logit,recall
+21,worst texture,0.05856583884503495,0.07167146220245918,cancer,logit,recall
+22,worst perimeter,0.2259961296532235,0.23288865637806241,cancer,logit,recall
+23,worst area,0.3084581471588952,0.18109686982300102,cancer,logit,recall
+24,worst smoothness,0.0006879785079635523,0.0,cancer,logit,recall
+25,worst compactness,0.0027467005959447054,0.00026157467957102937,cancer,logit,recall
+26,worst concavity,0.005874856827530671,8.719155985697301e-05,cancer,logit,recall
+27,worst concave points,0.0010697039204677823,0.0,cancer,logit,recall
+28,worst symmetry,0.0008671409172698562,0.0,cancer,logit,recall
+29,worst fractal dimension,0.0012510388739397631,0.0,cancer,logit,recall
+0,mean radius,0.018462371788315873,0.04499999999999975,cancer,rf,recall
+1,mean texture,0.022899070033349348,0.01999999999999848,cancer,rf,recall
+2,mean perimeter,0.041500125063293376,0.0350000000000005,cancer,rf,recall
+3,mean area,0.027024019195688875,0.05625000000000008,cancer,rf,recall
+4,mean smoothness,0.007416678142046139,0.044999999999998166,cancer,rf,recall
+5,mean compactness,0.0060060967079649035,0.022499999999999083,cancer,rf,recall
+6,mean concavity,0.06221598978607865,0.057499999999998004,cancer,rf,recall
+7,mean concave points,0.08885690056711622,0.013750000000000933,cancer,rf,recall
+8,mean symmetry,0.004644844211960674,1.5820678100908232e-15,cancer,rf,recall
+9,mean fractal dimension,0.002732439160764313,0.05625000000000008,cancer,rf,recall
+10,radius error,0.017861410354038366,0.011250000000000333,cancer,rf,recall
+11,texture error,0.0014235404600517324,0.003750000000000111,cancer,rf,recall
+12,perimeter error,0.0134231578958703,0.026249999999999194,cancer,rf,recall
+13,area error,0.04501463652611609,0.018750000000002136,cancer,rf,recall
+14,smoothness error,0.0017820725842183798,1.5820678100908232e-15,cancer,rf,recall
+15,compactness error,0.002331580891973195,1.5820678100908232e-15,cancer,rf,recall
+16,concavity error,0.001294246488206201,1.5820678100908232e-15,cancer,rf,recall
+17,concave points error,0.0011254773880394885,1.5820678100908232e-15,cancer,rf,recall
+18,symmetry error,0.0030608396281463467,1.5820678100908232e-15,cancer,rf,recall
+19,fractal dimension error,0.002011853553237739,0.0350000000000005,cancer,rf,recall
+20,worst radius,0.10311636697068204,0.06749999999999724,cancer,rf,recall
+21,worst texture,0.03486883215512747,0.08000000000000025,cancer,rf,recall
+22,worst perimeter,0.16135009353751115,0.07874999999999917,cancer,rf,recall
+23,worst area,0.09878577081413112,0.04499999999999975,cancer,rf,recall
+24,worst smoothness,0.013173634706414375,1.5820678100908232e-15,cancer,rf,recall
+25,worst compactness,0.01876219363125886,1.5820678100908232e-15,cancer,rf,recall
+26,worst concavity,0.06668988746901103,0.05999999999999703,cancer,rf,recall
+27,worst concave points,0.1216231648487747,0.13124999999999754,cancer,rf,recall
+28,worst symmetry,0.005678535108729696,0.056249999999998496,cancer,rf,recall
+29,worst fractal dimension,0.004864170331883318,0.0350000000000005,cancer,rf,recall
+0,mean radius,0.0,8.76188472185984e-16,cancer,knn,recall
+1,mean texture,0.0011668228125298384,0.009691934925578575,cancer,knn,recall
+2,mean perimeter,0.0010538622264102124,0.0038075458636204363,cancer,knn,recall
+3,mean area,0.2013971749463209,0.27379716164762347,cancer,knn,recall
+4,mean smoothness,0.0,8.76188472185984e-16,cancer,knn,recall
+5,mean compactness,0.0,8.76188472185984e-16,cancer,knn,recall
+6,mean concavity,0.0,8.76188472185984e-16,cancer,knn,recall
+7,mean concave points,0.0,8.76188472185984e-16,cancer,knn,recall
+8,mean symmetry,0.00013498311841446135,8.76188472185984e-16,cancer,knn,recall
+9,mean fractal dimension,0.0,8.76188472185984e-16,cancer,knn,recall
+10,radius error,0.0,8.76188472185984e-16,cancer,knn,recall
+11,texture error,0.0,8.76188472185984e-16,cancer,knn,recall
+12,perimeter error,0.0,8.76188472185984e-16,cancer,knn,recall
+13,area error,0.016564165805434267,0.012807199723086882,cancer,knn,recall
+14,smoothness error,0.0,8.76188472185984e-16,cancer,knn,recall
+15,compactness error,0.0,8.76188472185984e-16,cancer,knn,recall
+16,concavity error,0.0,8.76188472185984e-16,cancer,knn,recall
+17,concave points error,0.0,8.76188472185984e-16,cancer,knn,recall
+18,symmetry error,0.0,8.76188472185984e-16,cancer,knn,recall
+19,fractal dimension error,4.4361693464271776e-05,8.76188472185984e-16,cancer,knn,recall
+20,worst radius,0.0,8.76188472185984e-16,cancer,knn,recall
+21,worst texture,0.0024472525692080175,0.017653167185877484,cancer,knn,recall
+22,worst perimeter,0.006923333106527034,0.0010384215991697276,cancer,knn,recall
+23,worst area,0.770268043721691,0.6812045690550232,cancer,knn,recall
+24,worst smoothness,0.0,8.76188472185984e-16,cancer,knn,recall
+25,worst compactness,0.0,8.76188472185984e-16,cancer,knn,recall
+26,worst concavity,0.0,8.76188472185984e-16,cancer,knn,recall
+27,worst concave points,0.0,8.76188472185984e-16,cancer,knn,recall
+28,worst symmetry,0.0,8.76188472185984e-16,cancer,knn,recall
+29,worst fractal dimension,0.0,8.76188472185984e-16,cancer,knn,recall
+0,mean radius,0.0009797566865328712,0.04854368932038714,cancer,gbc,recall
+1,mean texture,0.030360870118917072,0.08090614886731236,cancer,gbc,recall
+2,mean perimeter,0.0037798462657225953,0.08737864077669905,cancer,gbc,recall
+3,mean area,0.007032411158975936,0.009708737864077974,cancer,gbc,recall
+4,mean smoothness,0.011255898732155791,0.04854368932038714,cancer,gbc,recall
+5,mean compactness,0.006507613565310855,0.010787486515641738,cancer,gbc,recall
+6,mean concavity,0.001796871635071695,0.006472491909386682,cancer,gbc,recall
+7,mean concave points,0.1108908551039603,0.04854368932038851,cancer,gbc,recall
+8,mean symmetry,0.003215137827041558,0.04854368932038851,cancer,gbc,recall
+9,mean fractal dimension,0.0013673605133409416,1.3653228134548662e-15,cancer,gbc,recall
+10,radius error,0.002171495802720903,0.03667745415318164,cancer,gbc,recall
+11,texture error,0.0016203898666430922,0.03883495145630917,cancer,gbc,recall
+12,perimeter error,0.018586684548982626,0.03128371089536145,cancer,gbc,recall
+13,area error,0.08549112816168836,0.07011866235166926,cancer,gbc,recall
+14,smoothness error,0.002560176598984732,0.012944983818770633,cancer,gbc,recall
+15,compactness error,0.0024249207466471787,0.03883495145630917,cancer,gbc,recall
+16,concavity error,0.0006724743566916766,1.3653228134548662e-15,cancer,gbc,recall
+17,concave points error,0.0013088729919388743,1.3653228134548662e-15,cancer,gbc,recall
+18,symmetry error,0.001008123285803867,1.3653228134548662e-15,cancer,gbc,recall
+19,fractal dimension error,0.0010630093976828556,1.3653228134548662e-15,cancer,gbc,recall
+20,worst radius,0.04886107427518723,0.03883495145631053,cancer,gbc,recall
+21,worst texture,0.05890672883067238,0.09816612729234352,cancer,gbc,recall
+22,worst perimeter,0.04708978151587874,0.07766990291262106,cancer,gbc,recall
+23,worst area,0.30545888226906887,0.026968716289106395,cancer,gbc,recall
+24,worst smoothness,0.011243867156958446,0.018338727076592187,cancer,gbc,recall
+25,worst compactness,0.002861767366561204,0.03883495145630917,cancer,gbc,recall
+26,worst concavity,0.07287387578080731,0.02265372168284588,cancer,gbc,recall
+27,worst concave points,0.15566070681106858,0.060409924487591284,cancer,gbc,recall
+28,worst symmetry,0.0014096127803806056,1.3653228134548662e-15,cancer,gbc,recall
+29,worst fractal dimension,0.0015398058486026922,1.3653228134548662e-15,cancer,gbc,recall
