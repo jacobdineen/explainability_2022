@@ -1,3 +1,7 @@
 /.ipynb_checkpoints
 /__pycache__
 /models/__pycache__
+#hidden due to sensitive data nature
+confidential_data/fraud.csv
+*/confidential_data/
+jpm_hide.ipynb
