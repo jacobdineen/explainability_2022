@@ -41,7 +41,7 @@ metrics = {
 ```
 
 ### Run Perturbation Explanation Against Shap
-'''python
+```python
 from dataloader import fetch_datasets
 from attribution import compare_cases
 
@@ -71,7 +71,7 @@ def run(datasets, metrics, models, load_from_disk = True):
 
 
 similarity_df, granular_value_df = run(datasets, metrics, models, False)
-'''
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
