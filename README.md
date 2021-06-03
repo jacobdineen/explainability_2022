@@ -40,8 +40,38 @@ metrics = {
 }
 ```
 
+### Run Perturbation Explanation Against Shap
+'''python
+from dataloader import fetch_datasets
+from attribution import compare_cases
+
+datasets = fetch_datasets()
+
+def run(datasets, metrics, models, load_from_disk = True):
+    if load_from_disk:
+        similarity_df = pd.read_csv('data/similarity.csv')
+        granular_value_df = pd.read_csv('data/gran_value.csv')
+        print('loaded from disk')
+        return similarity_df, granular_value_df
+    else:
+        granular_value_df = pd.DataFrame()
+        similarity_df = pd.DataFrame()
+        for dataset_name, dataset in datasets.items():
+            for metric_name, metric_func in metrics.items():
+                print(f'dataset: {dataset_name}, metric: {metric_name}')
+                logs, vals = compare_cases(dataset=(dataset_name, dataset),
+                                           metric=(metric_name, metric_func),
+                                           models = models)
+                granular_value_df = granular_value_df.append(vals)
+                similarity_df = similarity_df.append(logs)
+        similarity_df.to_csv('data/similarity.csv')
+        granular_value_df.to_csv('data/gran_value.csv')
+        print('saved to disk')
+        return similarity_df, granular_value_df
 
 
+similarity_df, granular_value_df = run(datasets, metrics, models, False)
+'''
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
