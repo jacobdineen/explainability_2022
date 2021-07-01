@@ -10,7 +10,18 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
 pip install -r requirements.txt
 ```
 
+
+
+
+
 ## Usage
+
+### Fetching Datasets
+By default, we load 4 datasets from the sklearn.datasets API (Iris, Adult, Wine, Cancer). Details on this fetch can be found in the dataloader.py file.
+fetchdatasets return a dict of the four datasets, split into train and test sets. fetch_datasets_adult_samples is used to partition varying sizes of the adult dataset for sensitivity analysis. 
+
+The synthetic dataset from JPMC is hidden from this repo.
+
 
 ### Define a set of algorithms and metrics
 ```python
@@ -41,6 +52,9 @@ metrics = {
 ```
 
 ### Run Perturbation Explanation Against Shap
+
+Running the below method will result in two outputs saved to disk if they are not already there. The similarity df shows the cosine sim between the weighted average computed our way, and the output of Shap attribution generation. The granular_value df outputs feature-wise similarity for each of the datasets/models.
+
 ```python
 from dataloader import fetch_datasets
 from attribution import compare_cases
