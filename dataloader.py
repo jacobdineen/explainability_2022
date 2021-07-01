@@ -5,8 +5,8 @@ from sklearn.model_selection import train_test_split
 
 
 def fetch_datasets():
-    """Method to systematically fetch partitioned sets of a 
-       numerous Shap/Sklearn datasets and store them in a dict
+    """Method to systematically fetch partitioned sets of a
+    numerous Shap/Sklearn datasets and store them in a dict
     """
 
     calls = {
@@ -34,8 +34,8 @@ def fetch_datasets():
 
 
 def fetch_datasets_adult_samples():
-    """Method to systematically fetch partitioned sets of a 
-       numerous Shap/Sklearn datasets and store them in a dict
+    """Method to systematically fetch partitioned sets of a
+    numerous Shap/Sklearn datasets and store them in a dict
     """
 
     calls = {
