@@ -4,13 +4,15 @@ Code Repo for Model Explainability in Predictive Analytics: A Comparative Approa
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
-
-```python
-pip install -r requirements.txt
+Run git clone to store the repository locally
 ```
+git clone https://github.com/jacobdineen/explainability_2022.git
+``` 
 
-
+create a conda env and install required modules
+'''
+conda create --name hicss22 --file requirements.txt
+```
 
 
 
