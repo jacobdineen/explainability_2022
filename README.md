@@ -12,7 +12,10 @@ git clone https://github.com/jacobdineen/explainability_2022.git
 create a conda env and install required modules
 '''
 conda create --name hicss22 --file requirements.txt
+conda activate hicss22
 ```
+
+check main.ipynb for a notebook walkthrough
 
 
 
