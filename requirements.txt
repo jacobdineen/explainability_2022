@@ -1,6 +1,7 @@
 pip==21.1.3    
-tensorflow==2.5.0    
-keras
+# tensorflow==2.5.0    
+# keras
+ipykernel
 scikit-learn==0.24.2
 shap==0.39.0
 matplotlib==3.4.2
