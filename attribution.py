@@ -6,6 +6,7 @@ import pandas as pd
 
 
 def fetch_shap_values(model, xtrain, xtest, ytest, k=50):
+
     # explain all the predictions in the test set
     med = shap.kmeans(xtrain, k)
     explainer = shap.KernelExplainer(model.predict_proba, med)
@@ -29,7 +30,7 @@ def perturb_categorical(data, feature, perturbation):
     """
     if perturbation >= 1: increase total number of feats by x* 2-p
     else: decrease total number by x * 1 - p
-    
+
     """
     idx_0s = data.index[data[feature] == 0].tolist()  # find all 0 indices
     idx_1s = data.index[data[feature] == 1].tolist()  # find all 1 indices
@@ -37,14 +38,18 @@ def perturb_categorical(data, feature, perturbation):
     if perturbation >= 1:
         p = 2 - perturbation
         idxs = np.random.choice(idx_0s, int(np.ceil(len(idx_1s) * p)), replace=True)
-        data[feature].iloc[idxs,] = 1  # change n indices from 0 to 1
+        data[feature].iloc[
+            idxs,
+        ] = 1  # change n indices from 0 to 1
 
     #     # deactivate features until zeroed
     else:
         try:
             p = 1 - perturbation
             idxs = np.random.choice(idx_1s, int(np.ceil(len(idx_1s) * p)), replace=True)
-            data[feature].iloc[idxs,] = 0  # change n indices from 0 to 1
+            data[feature].iloc[
+                idxs,
+            ] = 0  # change n indices from 0 to 1
         except:
             pass
     return data[feature]
@@ -95,7 +100,7 @@ def compare_cases(dataset: tuple, metric: tuple, models, k: int = 50):
     """
     dataset: (dataset_name, dataset) tuple
     metric: (metric_name, metric) tuple
-    
+
     Returns
     """
     values_df = pd.DataFrame()  # store metadata on SVs on ANWA

@@ -12,8 +12,8 @@ def fetch_datasets():
     calls = {
         "iris": shap.datasets.iris(),
         "adult": shap.datasets.adult(),
-        "wine": sklearn.datasets.load_wine(return_X_y=True, as_frame=True),
-        "cancer": sklearn.datasets.load_breast_cancer(return_X_y=True, as_frame=True),
+        "wine": sklearn.datasets.load_wine(return_X_y=True, as_frame=False),
+        "cancer": sklearn.datasets.load_breast_cancer(return_X_y=True, as_frame=False),
     }
 
     datasets = {}
